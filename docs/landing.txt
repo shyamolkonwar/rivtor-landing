@@ -1,0 +1,197 @@
+## VocoWeb Landing Page Architecture // Specification v1.0
+
+**Status:** Ready for Deployment
+**Framework:** Sprint Zero / Fusion Focus Design System
+**Objective:** High-conversion interface with strict "Fake Door" validation logic.
+
+---
+
+### 1. Global Layout Rules (The Grid)
+
+* **Canvas:** `#FFFFFF` (White).
+* **Container:** Fixed max-width `1152px`. Centered.
+* **Grid System:** 12-column grid.
+* **Separators:** All sections must be separated by full-width 1px solid borders (`#E5E5E5`).
+* **Typography:**
+* **Headings:** `Inter` / `Geist Sans`. Tracking: `-0.03em`. Color: `#0A0A0A`.
+* **Body:** `Inter`. Tracking: `normal`. Color: `#525252`.
+* **Metadata/Eyebrows:** `JetBrains Mono`. Uppercase. Size: `12px`. Tracking: `0.05em`. Color: `#525252`.
+
+
+* **Corners:** Strict `0px` or `2px`. No pills.
+
+---
+
+### 2. Section-by-Section Blueprint
+
+#### A. Navigation Bar (The Header)
+
+* **Height:** Fixed `64px`.
+* **Border:** Bottom 1px solid `#E5E5E5`.
+* **Layout:** Flexbox. Space-between.
+* **Logo (Left):**
+* Text: "VocoWeb".
+* Font: `Inter SemiBold`.
+* Tracking: `-0.04em`.
+
+
+* **Links (Right):**
+* Font: `JetBrains Mono`. Uppercase. Size `12px`.
+* Items: `MANIFESTO` | `PRICING` | `LOGIN`.
+* **CTA Button:** "START BUILDING".
+* Style: Solid Black background, White text. Sharp corners.
+* Height: `32px`.
+
+
+
+
+
+#### B. Section 1: The Hero (The Promise)
+
+* **Padding:** Top/Bottom `96px` (py-24).
+* **Alignment:** Strictly Left-aligned.
+* **Content Stack:**
+1. **Status Pill:** Start with a small mono tag: `[ SYSTEM STATUS: OPERATIONAL ]` in `#22C55E` (Green) text.
+2. **Headline:** `text-5xl` or `text-6xl`. Heavy weight.
+* "Stop Building 'Frankenstein' Apps That Get Banned by Stripe."
+
+
+3. **Sub-headline:** Width restricted to `600px`. Color: `#525252`.
+4. **Action Array:**
+* **Primary Button:** "START BUILDING". Large (`48px` height). Black background.
+* **Secondary Data:** Placed immediately below the button in `JetBrains Mono` `text-xs`.
+* Text: "NO CREDIT CARD REQUIRED // $10K/MO REVENUE GUARANTEE".
+
+
+
+
+* **Visual Logic:** No hero image. The typography is the image.
+
+#### C. Section 2: The "Anti-Pitch" (Agitation)
+
+* **Background:** `#FAFAFA` (Off-White) to distinguish from the Hero.
+* **Border:** Top and Bottom 1px solid `#E5E5E5`.
+* **Padding:** `py-20`.
+* **Layout:** Two-column grid (4 cols label / 8 cols content).
+* **Col 1 (Label):**
+* Text: "THE HARD TRUTH".
+* Font: `JetBrains Mono`.
+
+
+* **Col 2 (Content):**
+* Text: "AI builds code fast. It also builds technical debt faster..."
+* **Emphasis:** Bold the phrase "Deployment Hell."
+* **Conclusion:** "VocoWeb is different. We don't just write code. We run the business." (Color: `#0A0A0A`).
+
+
+
+#### D. Section 3: The 3 Pillars of Pain (The Filter)
+
+* **Layout:** 3 Equal Columns (Grid-cols-3).
+* **Separators:** Vertical 1px borders between columns.
+* **Card Style:**
+* Padding: `p-8`.
+* Hover State: Background swaps to `#FAFAFA` instantly (0s duration). Border color swaps to `#000000`.
+
+
+* **Content Structure per Card:**
+1. **Icon:** 24px Lucide/Phosphor icon (e.g., Server, CreditCard, Ghost). Stroke width: 2px. Color: Black.
+2. **Title:** "The Valley of Death". `Inter Medium`. `text-lg`.
+3. **Problem Block:**
+* Label: `PROBLEM:` (Mono font).
+* Text: Italicized quote. Color `#525252`.
+
+
+4. **Solution Block:**
+* Label: `VOCOWEB SOLUTION:` (Mono font).
+* Text: Bolded solution name ("Managed MicroVMs") followed by explanation.
+
+
+
+
+
+#### E. Section 4: Product Visualization (The Evidence)
+
+* **Layout:** Full width container.
+* **Caption:** Top left. "THE FOUNDRY DASHBOARD". Mono font.
+* **The Visual:**
+* Do not use a screenshot.
+* Create a **Wireframe Representation** using CSS borders.
+* A large rectangle with a sidebar and a data graph inside.
+* Lines should be 1px solid `#E5E5E5`.
+
+
+* **Feature List:**
+* Placement: Below the visual, 4-column grid.
+* Style: `[✅] FEATURE NAME`. Use Mono font for the whole line.
+
+
+
+#### F. Section 5: Pricing (The Intent Test)
+
+* **Layout:** 2 Columns.
+* **Toggle:** Simple text toggle `[ MONTHLY ] / [ YEARLY ]`. Active state is underlined with 2px Black line.
+* **Card 1: Builder ($39)**
+* Border: 1px solid `#E5E5E5`.
+* Button: Secondary (White bg, Black border).
+
+
+* **Card 2: Founder ($79)**
+* Border: 2px solid `#000000` (To denote "Recommended").
+* Tag: `RECOMMENDED` pill in top right.
+* Button: Primary (Black bg, White text). "START BUSINESS".
+
+
+* **List Style:** Use `+` symbols instead of bullets for the feature list.
+
+#### G. Section 6: FAQ (Objection Handling)
+
+* **Style:** Accordion list.
+* **Borders:** Each question is separated by a horizontal line.
+* **Interaction:**
+* Closed: Title only.
+* Click: Panel snaps open (0.2s easeOut).
+* Icon: Simple `+` rotates to `x`.
+
+
+
+#### H. Footer
+
+* **Background:** `#FAFAFA`.
+* **Padding:** `py-12`.
+* **Layout:** Simple flex row.
+* **Typography:** All text in `JetBrains Mono` `text-xs`. Color `#525252`.
+* **Copyright:** "© 2026 FUSION FOCUS. ALL RIGHTS RESERVED."
+
+---
+
+### 3. Interaction & Telemetry Guide (Fake Door Logic)
+
+This is the "Engine" of the page. The buttons are sensors, not just links.
+
+**Object A: The Low Intent Sensor**
+
+* **Trigger:** "Start Building" Button (Hero & Builder Plan).
+* **Visual Response:** Modal Pop-up.
+* Header: "ACCESS PROTOCOL".
+* Body: "The VocoWeb Sandbox is currently at capacity. Enter email for priority access."
+* Input: Sharp corners.
+
+
+* **Data Event:** Log as `LEAD_CAPTURE_LOW_INTENT`.
+
+**Object B: The High Intent Sensor**
+
+* **Trigger:** "Start Business" Button (Founder Plan).
+* **Visual Response:**
+* *Option A:* Redirect to Stripe Test Mode Checkout.
+* *Option B (Preferred):* Full screen form.
+* Question 1: "Enter Business Name" (This validates they have an idea).
+* Question 2: "Select Business Category".
+
+
+
+
+* **Data Event:** Log as `PURCHASE_INTENT_HIGH`. This is your validation metric for the Merchant of Record feature.
+
+---
