@@ -16,7 +16,7 @@ const steps: Step[] = [
         subtitle: "Stop Guessing. Start Knowing.",
         problem: "Most startups fail because they build something nobody asked for. You think your idea is great, but you haven't talked to actual customers or checked what competitors are doing.",
         solution: "Before you write a single line of code, ask VocoWeb to research the market for you.",
-        details: "Instead of saying \"Build me a CRM app,\" you say: \"What are people complaining about in reviews of popular CRM tools?\" VocoWeb analyzes competitor reviews, community discussions, social media, and industry trends. It finds the real problems people are willing to pay to solve.",
+        details: "VocoWeb scans competitor reviews and social media. It finds the real complaints people have, so you can build the solution they're already looking for.",
         benefit: "A clear report showing you validated opportunities—problems that real people are actually struggling with. No more building in the dark."
     },
     {
@@ -25,7 +25,7 @@ const steps: Step[] = [
         subtitle: "The AI Product Manager You Can't Afford to Hire",
         problem: "You have an idea, but you don't know exactly what features to build, how users should move through your app, or how your data should be organized. So you give vague instructions, and the AI builds... something. Usually the wrong something.",
         solution: "VocoStrategy acts like an experienced product manager who takes your messy notes and turns them into a clear, detailed plan.",
-        details: "Upload your thoughts, research findings, or customer feedback. VocoStrategy creates: A detailed product plan showing exactly what you're building, User flows showing how people will move through your app, Data structure showing what information you need to store and how.",
+        details: "Upload your notes. We create a complete blueprint—features, user flows, and data structure—so the AI knows exactly what to build.",
         benefit: "Crystal-clear specifications that ensure you build exactly what you need—not what the AI \"thinks\" you want."
     },
     {
@@ -34,7 +34,7 @@ const steps: Step[] = [
         subtitle: "Clean Code That Actually Works",
         problem: "Other platforms generate messy code that breaks the moment you try to add a new feature or deploy it for real users.",
         solution: "Because VocoStrategy already created a detailed plan, VocoBuild generates clean, organized code that makes sense.",
-        details: "We use pre-built, battle-tested components for critical features like user logins, payments, and data storage. The AI assembles these proven pieces—it doesn't try to invent security systems from scratch. ONE-CLICK DEPLOYMENT: Your app goes live on secure, isolated servers with one click. No wrestling with cloud providers or hiring DevOps experts. YOU OWN YOUR CODE: Export to GitHub or download everything anytime. We're not holding your work hostage.",
+        details: "We assemble your app from secure, proven building blocks. Click once to launch live. Export your code anytime. No lock-in, no complex server setup.",
         benefit: "You stay because we're useful, not because you're trapped."
     },
     {
@@ -43,7 +43,7 @@ const steps: Step[] = [
         subtitle: "All the Business Tools You Need, Built In",
         problem: "Even if you build a great app, you still need to handle payments, manage users, stay legally compliant, and understand what's working. Most founders get stuck here.",
         solution: "Your control center for everything that happens after you launch:",
-        details: "Payment Processing & Tax Compliance: We handle global payments and tax requirements. User Management: Professional login systems. Business Analytics: See who's using your app. Automatic Backups & Safety: Daily backups and one-click rollback.",
+        details: "Your business dashboard is ready. We handle global payments, user logins, analytics, and daily backups automatically.",
         benefit: "Sleep better at night."
     }
 ];
