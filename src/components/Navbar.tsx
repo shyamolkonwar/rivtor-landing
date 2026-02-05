@@ -1,18 +1,26 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
-            <div className="glass-effect rounded-full px-4 py-2 md:px-6 md:py-3 border border-gray-700/70 shadow-lg flex items-center gap-6">
-                {/* Brand */}
-                <Link
-                    href="/"
-                    className="font-mono text-xs uppercase tracking-[0.15em] text-signal-white"
-                    aria-label="VocoWeb Home"
-                >
-                    VocoWeb
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-[#050505]/80 backdrop-blur-md border-b border-white/5">
+            <div className="container max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+                {/* Logo */}
+                <Link href="/" className="flex items-center gap-2 group">
+                    <div className="relative w-8 h-8">
+                        <Image
+                            src="/images/logo.png"
+                            alt="VocoWeb Logo"
+                            fill
+                            className="object-contain"
+                            sizes="32px"
+                        />
+                    </div>
+                    <span className="font-mono text-lg font-bold tracking-tight text-white group-hover:text-safety-orange transition-colors">
+                        VOCOWEB
+                    </span>
                 </Link>
 
                 {/* Divider */}

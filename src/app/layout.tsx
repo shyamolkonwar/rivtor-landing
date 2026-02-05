@@ -16,15 +16,32 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VocoWeb - Stop Building Frankenstein Apps",
-  description: "VocoWeb doesn't just write code. We run the business. Build apps that won't get banned by Stripe.",
-  keywords: ["VocoWeb", "SaaS", "app builder", "no-code", "business automation"],
-  authors: [{ name: "VocoWeb" }],
-  openGraph: {
-    title: "VocoWeb - Stop Building Frankenstein Apps",
-    description: "VocoWeb doesn't just write code. We run the business.",
-    type: "website",
+  metadataBase: new URL('https://vocoweb.in'),
+  title: {
+    default: "VocoWeb: The Business Operating System for AI Startups",
+    template: "%s | VocoWeb"
   },
+  description: "Stop building Frankenstein apps. VocoWeb is the first end-to-end platform to validate ideas, generate production code, and operate sustainable companies.",
+  keywords: ["VocoWeb", "SaaS", "app builder", "no-code", "business automation", "AI builder", "startup tools"],
+  authors: [{ name: "VocoWeb Team" }],
+  openGraph: {
+    title: "VocoWeb: The Business Operating System for AI Startups",
+    description: "Stop building Frankenstein apps. VocoWeb is the first end-to-end platform to validate ideas, generate production code, and operate sustainable companies.",
+    url: 'https://vocoweb.in',
+    siteName: 'VocoWeb',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "VocoWeb: The Business Operating System for AI Startups",
+    description: "Stop building Frankenstein apps. VocoWeb is the first end-to-end platform to validate ideas, generate production code, and operate sustainable companies.",
+    creator: '@vocoweb', // Placeholder or real handle if known
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 

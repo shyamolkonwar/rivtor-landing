@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -17,8 +18,29 @@ export default function Footer() {
         <div className="text-8xl font-bold tracking-wider">VocoWeb</div>
       </motion.div>
 
-      <div className="container relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <div className="container max-w-6xl mx-auto px-4 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          {/* Brand Column */}
+          <div className="col-span-1 md:col-span-2">
+            <Link href="/" className="flex items-center gap-2 mb-6 group w-fit">
+              <div className="relative w-8 h-8">
+                <Image
+                  src="/images/logo.png"
+                  alt="VocoWeb Logo"
+                  fill
+                  className="object-contain"
+                  sizes="32px"
+                />
+              </div>
+              <span className="font-mono text-xl font-bold tracking-tight text-white group-hover:text-safety-orange transition-colors">
+                VOCOWEB
+              </span>
+            </Link>
+            <p className="font-mono text-sm text-gray-400 max-w-xs">
+              Architecting the future of automated enterprise.
+            </p>
+          </div>
+
           {/* Status Column */}
           <div>
             <h4 className="font-mono text-sm text-safety-orange mb-4">STATUS</h4>
