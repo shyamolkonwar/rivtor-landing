@@ -1,7 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
+
+const geist = Geist({
+  variable: "--font-geist",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const inter = Inter({
   variable: "--font-inter",
@@ -9,34 +21,28 @@ const inter = Inter({
   display: "swap",
 });
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains",
-  subsets: ["latin"],
-  display: "swap",
-});
-
 export const metadata: Metadata = {
-  metadataBase: new URL('https://vocoweb.in'),
+  metadataBase: new URL('https://rivtor.com'),
   title: {
-    default: "VocoWeb: The Business Operating System for AI Startups",
-    template: "%s | VocoWeb"
+    default: "Rivtor: The Business Operating System for AI Startups",
+    template: "%s | Rivtor"
   },
-  description: "Stop building Frankenstein apps. VocoWeb is the first end-to-end platform to validate ideas, generate production code, and operate sustainable companies.",
-  keywords: ["VocoWeb", "SaaS", "app builder", "no-code", "business automation", "AI builder", "startup tools"],
-  authors: [{ name: "VocoWeb Team" }],
+  description: "Stop building Frankenstein apps. Rivtor is the first end-to-end platform to validate ideas, generate production code, and operate sustainable companies.",
+  keywords: ["Rivtor", "SaaS", "app builder", "no-code", "business automation", "AI builder", "startup tools"],
+  authors: [{ name: "Rivtor Team" }],
   openGraph: {
-    title: "VocoWeb: The Business Operating System for AI Startups",
-    description: "Stop building Frankenstein apps. VocoWeb is the first end-to-end platform to validate ideas, generate production code, and operate sustainable companies.",
-    url: 'https://vocoweb.in',
-    siteName: 'VocoWeb',
+    title: "Rivtor: The Business Operating System for AI Startups",
+    description: "Stop building Frankenstein apps. Rivtor is the first end-to-end platform to validate ideas, generate production code, and operate sustainable companies.",
+    url: 'https://rivtor.com',
+    siteName: 'Rivtor',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: "VocoWeb: The Business Operating System for AI Startups",
-    description: "Stop building Frankenstein apps. VocoWeb is the first end-to-end platform to validate ideas, generate production code, and operate sustainable companies.",
-    creator: '@vocoweb', // Placeholder or real handle if known
+    title: "Rivtor: The Business Operating System for AI Startups",
+    description: "Stop building Frankenstein apps. Rivtor is the first end-to-end platform to validate ideas, generate production code, and operate sustainable companies.",
+    creator: '@rivtor', // Placeholder or real handle if known
   },
   robots: {
     index: true,
@@ -64,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
+        className={`${geist.variable} ${geistMono.variable} antialiased`}
       >
         {process.env.NEXT_PUBLIC_GA_ID && (
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />

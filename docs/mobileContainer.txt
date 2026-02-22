@@ -1,0 +1,41 @@
+1. The Layout Logic: Stack, Do Not Split
+On desktop, you have a left pane (Input) and a right pane (Output). On mobile, this must become a strict vertical stack.
+The Directive (Input) sits at the top.
+A horizontal Milled Steel (#262626) divider separates them.
+The Live Environment (Output) sits at the bottom.
+2. The Top Bar: Ruthless Trimming
+Your mobile top bar is currently squished. You must hide non-essential data on mobile.
+Left side: RIVTOR_KERNEL_v2.4.1
+Right side: [●] SYSTEM: ONLINE
+Action: Hide REGION: EU-WEST and LATENCY: 42ms on mobile screens entirely. They are secondary metrics and clutter the void.
+3. The Directive (Input Pane)
+The code input works well vertically, but you must ensure the text does not break the container.
+Action: Apply text-wrapping logic to your container so long lines (like the RBAC_LEVELS array) wrap cleanly to the next line instead of pushing the box wider than the screen.
+Padding: Reduce the padding. On desktop you might have 40px of padding; on mobile, reduce it to 16px or 20px so the text utilizes the full width of the phone.
+4. The Output Pane: Kill the Table
+This is the most critical fix. You cannot use a horizontal <table> on mobile. You must convert the table rows into Stacked Data Logs.
+
+Instead of a horizontal row, each batch entry becomes its own distinct block of text.
+
+Structure each log entry like this:
+
+[ BATCH_ID: BT-8902A ]
+TIME: 2026-02-22 08:14 (UTC)
+STATUS: VERIFIED
+OPERATOR: USR-492 | ENCRYPTION: SHA-256
+(Add a dashed Milled Steel line here to separate from the next log)
+
+[ BATCH_ID: BT-8903B ]
+TIME: 2026-02-22 09:30 (UTC)
+STATUS: AUDIT_REQ (Keep this in Forge Amber)
+OPERATOR: USR-118 | ENCRYPTION: SHA-256
+
+Why this works: It maintains the monospace, terminal aesthetic but adapts perfectly to a vertical scroll. It looks like a live server log rather than a broken spreadsheet.
+
+5. The Bottom Metrics
+At the bottom of the Output pane, you currently have three metrics side-by-side (INFRASTRUCTURE, DB_SYNC, EXPORT_READY).
+Action: Stack these vertically on mobile, aligned to the left.
+The Execution
+Go into your CSS framework (like Tailwind). You will use standard breakpoints to say: "If the screen is mobile, stack the columns vertically and render the Data Logs. If the screen is desktop, display the split-pane horizontal table."
+
+This ensures the mobile user sees a highly optimized, readable server log, while the desktop user sees the massive compliance dashboard.

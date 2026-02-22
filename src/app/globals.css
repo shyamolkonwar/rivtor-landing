@@ -1,27 +1,42 @@
 @import "tailwindcss";
 
 /* ============================================
-   VocoWeb Industrial Luxury Design System
+   Rivtor Industrial Luxury Design System
    Titanium Trust Visual Identity
    ============================================ */
 
 :root {
-  /* Industrial Luxury Color Palette */
-  --color-void-black: #050505;
-  --color-tungsten-grey: #1A1A1A;
-  --color-tungsten-light: #333333;
-  --color-signal-white: #F5F5F7;
-  --color-safety-orange: #FF4D00;
-  
+  /* Rivtor Brand Color Palette - The Rivtor Standard */
+  /* The Void (Backgrounds) */
+  --color-deep-obsidian: #070707;
+  --color-machine-surface: #141414;
+
+  /* The Steel (Borders) */
+  --color-milled-steel: #262626;
+
+  /* The Data (Typography) */
+  --color-high-tensile-white: #F3F4F6;
+  --color-schematic-gray: #9CA3AF;
+
+  /* The Catalyst (Action/Accent) */
+  --color-forge-amber: #E54826;
+
+  /* Legacy support - mapping to new palette */
+  --color-void-black: #070707;
+  --color-tungsten-grey: #141414;
+  --color-tungsten-light: #262626;
+  --color-signal-white: #F3F4F6;
+  --color-safety-orange: #E54826;
+
   /* Secondary Colors */
-  --color-border: #2A2A2A;
-  --color-text-primary: #F5F5F7;
-  --color-text-secondary: #A0A0A0;
+  --color-border: #262626;
+  --color-text-primary: #F3F4F6;
+  --color-text-secondary: #9CA3AF;
   --color-text-muted: #666666;
 
-  /* Typography */
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', monospace;
+  /* Typography - Geist & Inter */
+  --font-sans: var(--font-geist), var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: var(--font-geist-mono), 'JetBrains Mono', monospace;
 
   /* Spacing */
   --container-max-width: 1280px;
@@ -144,7 +159,7 @@ body::before {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-safety-orange);
+  color: var(--color-forge-amber);
 }
 
 /* ============================================
@@ -191,8 +206,8 @@ body::before {
 
 /* Button Styles - Industrial */
 .btn-primary {
-  background-color: var(--color-safety-orange);
-  color: var(--color-void-black);
+  background-color: var(--color-forge-amber);
+  color: var(--color-deep-obsidian);
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 600;

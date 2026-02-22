@@ -1,22 +1,29 @@
-import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import BentoGridSection from "@/components/BentoGridSection";
-import XRaySection from "@/components/XRaySection";
+import EngineTerminal from "@/components/EngineTerminal";
+import ManifestoSection from "@/components/ManifestoSection";
+import ArchitectureSection from "@/components/ArchitectureSection";
+import RoadmapSection from "@/components/RoadmapSection";
+import SpecificationsSection from "@/components/SpecificationsSection";
 import PricingSection from "@/components/PricingSection";
+import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <SmoothScrollProvider>
+    <>
       <Navbar />
-      <main className="min-h-screen bg-void-black">
+      <main className="min-h-screen bg-[#070707]">
         <HeroSection />
-        <BentoGridSection />
-        <XRaySection />
+        <EngineTerminal />
+        <ManifestoSection />
+        <ArchitectureSection />
+        <RoadmapSection />
+        <SpecificationsSection />
         <PricingSection />
-        <Footer />
+        <FAQSection />
       </main>
-    </SmoothScrollProvider>
+      <Footer />
+    </>
   );
 }

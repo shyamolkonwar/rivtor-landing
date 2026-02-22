@@ -49,7 +49,7 @@ export default function ReportPage() {
     };
 
     return (
-        <main className="min-h-screen bg-[#050505] text-[#F5F5F7]">
+        <main className="min-h-screen bg-[#070707] text-[#F3F4F6]">
             <Navbar />
 
             <div className="container pt-32 pb-20 max-w-6xl relative z-10">
@@ -61,23 +61,23 @@ export default function ReportPage() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
                         >
-                            <div className="font-mono text-xs text-[#FF4D00] uppercase tracking-wider mb-4">
+                            <div className="font-mono text-xs text-[#E54826] uppercase tracking-wider mb-4">
                                 Security Intelligence
                             </div>
-                            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[#F5F5F7] mb-6 leading-tight">
+                            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[#F3F4F6] mb-6 leading-tight">
                                 Report <br />
                                 Vulnerability
                             </h1>
-                            <p className="font-mono text-sm text-[#A0A0A0] leading-relaxed max-w-sm mb-12">
+                            <p className="font-mono text-sm text-[#9CA3AF] leading-relaxed max-w-sm mb-12">
                                 Help us strengthen the core. Submit detailed reports on potential security flaws or anomalies.
                             </p>
 
-                            <div className="p-6 bg-[#1A1A1A] border border-[#333] rounded-lg mb-8">
+                            <div className="p-6 bg-[#141414] border border-[#262626] rounded-lg mb-8">
                                 <div className="flex items-start gap-4">
-                                    <AlertTriangle className="w-6 h-6 text-[#FF4D00] flex-shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-[#E54826] flex-shrink-0 mt-1" />
                                     <div>
-                                        <h3 className="font-mono text-sm text-[#F5F5F7] uppercase tracking-wider mb-2">Encrypted Transmission</h3>
-                                        <p className="text-[#A0A0A0] text-sm leading-relaxed">
+                                        <h3 className="font-mono text-sm text-[#F3F4F6] uppercase tracking-wider mb-2">Encrypted Transmission</h3>
+                                        <p className="text-[#9CA3AF] text-sm leading-relaxed">
                                             Your report is encrypted end-to-end. We review all submissions within 24 hours. Critical issues may be eligible for our bug bounty program.
                                         </p>
                                     </div>
@@ -88,19 +88,19 @@ export default function ReportPage() {
 
                     {/* Right Column: Form */}
                     <div className="relative">
-                        <div className="absolute -inset-4 bg-gradient-to-r from-[#FF4D00] to-red-600 opacity-10 blur-2xl rounded-lg pointer-events-none" />
+                        <div className="absolute -inset-4 bg-gradient-to-r from-[#E54826] to-red-600 opacity-10 blur-2xl rounded-lg pointer-events-none" />
 
                         <motion.form
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                             onSubmit={handleSubmit}
-                            className="relative bg-[#0A0A0A] border border-[#2A2A2A] p-8 md:p-10 rounded-xl shadow-2xl"
+                            className="relative bg-[#070707] border border-[#262626] p-8 md:p-10 rounded-xl shadow-2xl"
                         >
                             <div className="space-y-6">
                                 <div className="grid grid-cols-2 gap-4">
                                     <div>
-                                        <label htmlFor="name" className="block font-mono text-xs text-[#666] uppercase tracking-wider mb-2">
+                                        <label htmlFor="name" className="block font-mono text-xs text-[#9CA3AF] uppercase tracking-wider mb-2">
                                             Name
                                         </label>
                                         <input
@@ -109,12 +109,12 @@ export default function ReportPage() {
                                             required
                                             value={formData.name}
                                             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                                            className="w-full bg-[#111] border border-[#333] text-[#F5F5F7] p-3 focus:outline-none focus:border-[#FF4D00] transition-colors rounded-none placeholder-[#444]"
+                                            className="w-full bg-[#141414] border border-[#262626] text-[#F3F4F6] p-3 focus:outline-none focus:border-[#E54826] transition-colors rounded-none placeholder-[#666666]"
                                             placeholder="NAME"
                                         />
                                     </div>
                                     <div>
-                                        <label htmlFor="email" className="block font-mono text-xs text-[#666] uppercase tracking-wider mb-2">
+                                        <label htmlFor="email" className="block font-mono text-xs text-[#9CA3AF] uppercase tracking-wider mb-2">
                                             Email
                                         </label>
                                         <input
@@ -123,21 +123,21 @@ export default function ReportPage() {
                                             required
                                             value={formData.email}
                                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                            className="w-full bg-[#111] border border-[#333] text-[#F5F5F7] p-3 focus:outline-none focus:border-[#FF4D00] transition-colors rounded-none placeholder-[#444]"
+                                            className="w-full bg-[#141414] border border-[#262626] text-[#F3F4F6] p-3 focus:outline-none focus:border-[#E54826] transition-colors rounded-none placeholder-[#666666]"
                                             placeholder="EMAIL"
                                         />
                                     </div>
                                 </div>
 
                                 <div>
-                                    <label htmlFor="severity" className="block font-mono text-xs text-[#666] uppercase tracking-wider mb-2">
+                                    <label htmlFor="severity" className="block font-mono text-xs text-[#9CA3AF] uppercase tracking-wider mb-2">
                                         Severity Level
                                     </label>
                                     <select
                                         id="severity"
                                         value={formData.severity}
                                         onChange={(e) => setFormData({ ...formData, severity: e.target.value })}
-                                        className="w-full bg-[#111] border border-[#333] text-[#F5F5F7] p-3 focus:outline-none focus:border-[#FF4D00] transition-colors rounded-none appearance-none"
+                                        className="w-full bg-[#141414] border border-[#262626] text-[#F3F4F6] p-3 focus:outline-none focus:border-[#E54826] transition-colors rounded-none appearance-none"
                                     >
                                         <option value="low">Low - Cosmetic / User Experience</option>
                                         <option value="medium">Medium - Functional Issue</option>
@@ -147,7 +147,7 @@ export default function ReportPage() {
                                 </div>
 
                                 <div>
-                                    <label htmlFor="description" className="block font-mono text-xs text-[#666] uppercase tracking-wider mb-2">
+                                    <label htmlFor="description" className="block font-mono text-xs text-[#9CA3AF] uppercase tracking-wider mb-2">
                                         Issue Description
                                     </label>
                                     <textarea
@@ -156,13 +156,13 @@ export default function ReportPage() {
                                         rows={3}
                                         value={formData.description}
                                         onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                                        className="w-full bg-[#111] border border-[#333] text-[#F5F5F7] p-3 focus:outline-none focus:border-[#FF4D00] transition-colors rounded-none placeholder-[#444] resize-none"
+                                        className="w-full bg-[#141414] border border-[#262626] text-[#F3F4F6] p-3 focus:outline-none focus:border-[#E54826] transition-colors rounded-none placeholder-[#666666] resize-none"
                                         placeholder="DESCRIBE THE VULNERABILITY..."
                                     />
                                 </div>
 
                                 <div>
-                                    <label htmlFor="steps" className="block font-mono text-xs text-[#666] uppercase tracking-wider mb-2">
+                                    <label htmlFor="steps" className="block font-mono text-xs text-[#9CA3AF] uppercase tracking-wider mb-2">
                                         Steps to Reproduce (Optional)
                                     </label>
                                     <textarea
@@ -170,7 +170,7 @@ export default function ReportPage() {
                                         rows={3}
                                         value={formData.steps_to_reproduce}
                                         onChange={(e) => setFormData({ ...formData, steps_to_reproduce: e.target.value })}
-                                        className="w-full bg-[#111] border border-[#333] text-[#F5F5F7] p-3 focus:outline-none focus:border-[#FF4D00] transition-colors rounded-none placeholder-[#444] resize-none"
+                                        className="w-full bg-[#141414] border border-[#262626] text-[#F3F4F6] p-3 focus:outline-none focus:border-[#E54826] transition-colors rounded-none placeholder-[#666666] resize-none"
                                         placeholder="1. GO TO..."
                                     />
                                 </div>
@@ -179,7 +179,7 @@ export default function ReportPage() {
                                     <button
                                         type="submit"
                                         disabled={status === 'submitting'}
-                                        className="w-full bg-[#F5F5F7] text-[#050505] font-mono text-sm uppercase tracking-wider py-4 hover:bg-[#FF4D00] hover:text-[#050505] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                        className="w-full bg-[#F3F4F6] text-[#070707] font-mono text-sm uppercase tracking-wider py-4 hover:bg-[#E54826] hover:text-[#070707] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                                     >
                                         {status === 'submitting' ? 'Transmitting Report...' : 'Submit Report'}
                                     </button>

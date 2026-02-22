@@ -53,7 +53,7 @@ export default function ProblemSection() {
                             </p>
 
                             <p className="text-lg text-[#525252]">
-                                VocoWeb is different. We help you build the <em className="italic">right</em> thing, the <em className="italic">right</em> way.
+                                Rivtor is different. We help you build the <em className="italic">right</em> thing, the <em className="italic">right</em> way.
                             </p>
                         </div>
                     </div>

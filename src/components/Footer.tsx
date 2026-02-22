@@ -1,95 +1,48 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="relative py-20 border-t border-gray-800">
-      {/* VocoWeb Watermark */}
-      <motion.div
-        className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 0.05 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}
-      >
-        <div className="text-8xl font-bold tracking-wider">VocoWeb</div>
-      </motion.div>
-
-      <div className="container max-w-6xl mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-16">
-          {/* Brand Column */}
-          <div className="col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-6 group w-fit">
-              <div className="relative w-8 h-8">
-                <Image
-                  src="/images/logo.png"
-                  alt="VocoWeb Logo"
-                  fill
-                  className="object-contain"
-                  sizes="32px"
-                />
-              </div>
-              <span className="font-mono text-xl font-bold tracking-tight text-white group-hover:text-safety-orange transition-colors">
-                VOCOWEB
-              </span>
-            </Link>
-            <p className="font-mono text-sm text-gray-400 max-w-xs">
-              Architecting the future of automated enterprise.
-            </p>
-          </div>
-
-          {/* Status Column */}
-          <div>
-            <h4 className="font-mono text-sm text-safety-orange mb-4">STATUS</h4>
-            <div className="space-y-2 font-mono text-sm">
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span>BUILDER [ONLINE]</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Legal Column */}
-          <div>
-            <h4 className="font-mono text-sm text-safety-orange mb-4">LEGAL</h4>
-            <div className="space-y-2 font-mono text-sm">
-              <div><Link href="/privacy" className="hover:text-safety-orange transition-colors">Privacy</Link></div>
-              <div><Link href="/terms" className="hover:text-safety-orange transition-colors">Terms</Link></div>
-            </div>
-          </div>
-
-          {/* Security Column */}
-          <div>
-            <h4 className="font-mono text-sm text-safety-orange mb-4">SECURITY</h4>
-            <div className="space-y-2 font-mono text-sm">
-              <div><Link href="/security" className="hover:text-safety-orange transition-colors">Security</Link></div>
-            </div>
-          </div>
-
-          {/* Contact Column */}
-          <div>
-            <h4 className="font-mono text-sm text-safety-orange mb-4">CONTACT</h4>
-            <div className="space-y-2 font-mono text-sm">
-              <div>office@vocoweb.in</div>
-              <div>Support: 24/7</div>
-              <div>Enterprise: Available</div>
-            </div>
-          </div>
+    <footer className="bg-[#070707] border-t border-[#262626] py-20">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        {/* CTA Section */}
+        <div className="text-center mb-16">
+          <h3 className="font-mono text-sm tracking-widest uppercase text-[#9CA3AF] mb-4">
+            Deploy reality.
+          </h3>
+          <Link
+            href="#pricing"
+            className="inline-block bg-[#E54826] text-[#070707] font-mono text-sm font-semibold uppercase tracking-widest px-8 py-4 hover:bg-[#C43D1F] transition-colors"
+          >
+            Request Engine Access
+          </Link>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="font-mono text-sm mb-4 md:mb-0">
-              © 2026 VocoWeb. All Rights Reserved.
-            </div>
-            <div className="font-mono text-xs text-gray-500">
-              Architecting the future of automated enterprise.
-            </div>
-          </div>
+        {/* Links */}
+        <div className="flex flex-wrap justify-center gap-8 mb-12">
+          <Link href="/privacy" className="font-mono text-xs tracking-widest uppercase text-[#9CA3AF] hover:text-[#F3F4F6] transition-colors">
+            Privacy
+          </Link>
+          <Link href="/terms" className="font-mono text-xs tracking-widest uppercase text-[#9CA3AF] hover:text-[#F3F4F6] transition-colors">
+            Terms
+          </Link>
+          <Link href="/security" className="font-mono text-xs tracking-widest uppercase text-[#9CA3AF] hover:text-[#F3F4F6] transition-colors">
+            Security
+          </Link>
+          <Link href="/report" className="font-mono text-xs tracking-widest uppercase text-[#9CA3AF] hover:text-[#F3F4F6] transition-colors">
+            Report
+          </Link>
+          <Link href="/contact" className="font-mono text-xs tracking-widest uppercase text-[#9CA3AF] hover:text-[#F3F4F6] transition-colors">
+            Contact
+          </Link>
+        </div>
+
+        {/* Copyright */}
+        <div className="text-center">
+          <p className="font-mono text-xs tracking-wider text-[#9CA3AF]">
+            © 2026 Rivtor.
+          </p>
         </div>
       </div>
     </footer>

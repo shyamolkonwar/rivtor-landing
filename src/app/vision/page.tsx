@@ -95,7 +95,7 @@ export default function BrochurePage() {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2 }}
                 >
-                  VocoWeb
+                  Rivtor
                 </motion.div>
 
                 <motion.h1
@@ -226,7 +226,7 @@ export default function BrochurePage() {
             >
               <div className="eyebrow mb-4">OUR SOLUTION</div>
               <h2 className="heading-lg mb-6">
-                VocoWeb is not a Code Editor.
+                Rivtor is not a Code Editor.
                 <br />
                 <span className="text-safety-orange">It is a Sovereign Business Operating System.</span>
               </h2>
@@ -240,7 +240,7 @@ export default function BrochurePage() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <p className="body-text-large mb-12 text-gray-300">
-                VocoWeb replaces the fragmented stack of &ldquo;Dev Agency + DevOps + Legal Consultant&rdquo; with a unified, automated platform. We target the <span className="text-signal-white font-semibold">Non-Technical B2B Founder</span>, specifically in bureaucracy-heavy markets like the EU, providing a &ldquo;Golden Path&rdquo; from idea to revenue.
+                Rivtor replaces the fragmented stack of &ldquo;Dev Agency + DevOps + Legal Consultant&rdquo; with a unified, automated platform. We target the <span className="text-signal-white font-semibold">Non-Technical B2B Founder</span>, specifically in bureaucracy-heavy markets like the EU, providing a &ldquo;Golden Path&rdquo; from idea to revenue.
               </p>
             </motion.div>
 
@@ -262,7 +262,7 @@ export default function BrochurePage() {
                 </div>
                 <h3 className="heading-md mb-4">The "Anti-Fragile" Builder</h3>
                 <p className="body-text mb-4 text-gray-400">
-                  Unlike competitors that "vibe code" from scratch (leading to bugs), VocoWeb utilizes a <span className="text-signal-white">Proprietary Kernel</span>.
+                  Unlike competitors that "vibe code" from scratch (leading to bugs), Rivtor utilizes a <span className="text-signal-white">Proprietary Kernel</span>.
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
@@ -270,7 +270,7 @@ export default function BrochurePage() {
                     <span className="font-mono text-xs text-gray-300">Configuration &gt; Generation</span>
                   </div>
                   <p className="body-text text-sm">
-                    Our AI doesn&apos;t write risky business logic. It configures our pre-tested, hardened modules (<span className="font-mono text-safety-orange">@vocoweb/kernel</span>).
+                    Our AI doesn&apos;t write risky business logic. It configures our pre-tested, hardened modules (<span className="font-mono text-safety-orange">@rivtor/kernel</span>).
                   </p>
                   <div className="mt-4 p-4 bg-void-black border border-gray-800">
                     <div className="font-mono text-xs text-green-400 mb-1">RESULT</div>
@@ -376,16 +376,16 @@ export default function BrochurePage() {
             >
               {[
                 {
-                  name: '@vocoweb/kernel',
+                  name: '@rivtor/kernel',
                   description: 'The "Brain" that enforces security and prevents data leaks.',
                   accent: true
                 },
                 {
-                  name: '@vocoweb/tenant',
+                  name: '@rivtor/tenant',
                   description: 'Enterprise-grade Multi-Tenancy (Teams & RBAC) out of the box.'
                 },
                 {
-                  name: '@vocoweb/shield',
+                  name: '@rivtor/shield',
                   description: 'A runtime firewall that blocks non-compliant traffic and data egress.'
                 },
                 {
@@ -482,7 +482,7 @@ export default function BrochurePage() {
                     </div>
                   </div>
                   <p className="body-text mb-4">
-                    We capture a percentage of the transaction volume (GMV) processed by successful apps built on VocoWeb.
+                    We capture a percentage of the transaction volume (GMV) processed by successful apps built on Rivtor.
                   </p>
                   <div className="p-4 bg-void-black border border-gray-800">
                     <div className="font-mono text-xs text-green-400">
@@ -555,7 +555,7 @@ export default function BrochurePage() {
               transition={{ duration: 0.8 }}
               className="text-center"
             >
-              <div className="eyebrow mb-6">VocoWeb</div>
+              <div className="eyebrow mb-6">Rivtor</div>
               <h2 className="heading-lg text-safety-orange max-w-4xl mx-auto">
                 Operational Certainty in an AI World.
               </h2>

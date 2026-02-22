@@ -1,60 +1,27 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
-            <div className="glass-effect rounded-full px-4 py-2 md:px-6 md:py-3 border border-gray-700/70 shadow-lg flex items-center gap-6">
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-[#070707]/90 backdrop-blur-md border-b border-[#262626]">
+            <div className="max-w-7xl mx-auto px-6 md:px-12 h-16 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2 group">
-                    <div className="relative w-6 h-6">
-                        <Image
-                            src="/images/logo.png"
-                            alt="VocoWeb Logo"
-                            fill
-                            className="object-contain"
-                            sizes="24px"
-                        />
-                    </div>
-                    <span className="font-mono text-xs uppercase tracking-[0.15em] text-signal-white group-hover:text-safety-orange transition-colors">
-                        VocoWeb
+                <Link href="/" className="flex items-center gap-3">
+                    <span className="font-mono text-sm font-semibold tracking-widest uppercase text-[#F3F4F6]">
+                        RIVTOR
                     </span>
                 </Link>
 
-                {/* Divider */}
-                <span className="w-px h-4 bg-gray-700 hidden md:inline-block" />
-
-                {/* Nav Links */}
-                <div className="hidden md:flex items-center gap-4">
+                {/* Sign In */}
+                <div>
                     <Link
-                        href="/vision"
-                        className="font-mono text-xs uppercase tracking-[0.12em] text-gray-300 hover:text-signal-white transition-colors"
+                        href="https://app.rivtor.com"
+                        className="font-mono text-xs uppercase tracking-widest text-[#9CA3AF] hover:text-[#F3F4F6] transition-colors"
                     >
-                        Vision
-                    </Link>
-                    <Link
-                        href="#architecture"
-                        className="font-mono text-xs uppercase tracking-[0.12em] text-gray-300 hover:text-signal-white transition-colors"
-                    >
-                        ARCHITECTURE
-                    </Link>
-                    <Link
-                        href="#pricing"
-                        className="font-mono text-xs uppercase tracking-[0.12em] text-gray-300 hover:text-signal-white transition-colors"
-                    >
-                        ACCESS
+                        Sign In
                     </Link>
                 </div>
-
-                {/* CTA */}
-                <a
-                    href="https://app.vocoweb.in"
-                    className="ml-2 bg-safety-orange text-void-black font-mono text-xs uppercase tracking-[0.12em] px-4 py-2 rounded-full hover:bg-orange-500 transition-colors"
-                >
-                    Deploy
-                </a>
             </div>
         </nav>
     );

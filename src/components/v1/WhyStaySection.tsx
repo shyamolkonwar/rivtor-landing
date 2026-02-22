@@ -21,14 +21,14 @@ export default function WhyStaySection() {
                         <div className="bg-white p-8 border border-[#E5E5E5]" style={{ borderRadius: "2px" }}>
                             <h3 className="font-bold text-[#0A0A0A] mb-3">Your Research Lives Here</h3>
                             <p className="text-[#525252] text-sm leading-relaxed">
-                                All the market insights and validated opportunities that led to your product? That&apos;s in VocoWeb.
+                                All the market insights and validated opportunities that led to your product? That&apos;s in Rivtor.
                             </p>
                         </div>
 
                         <div className="bg-white p-8 border border-[#E5E5E5]" style={{ borderRadius: "2px" }}>
                             <h3 className="font-bold text-[#0A0A0A] mb-3">Your Strategy Lives Here</h3>
                             <p className="text-[#525252] text-sm leading-relaxed">
-                                The product plans, user flows, and specifications? Also in VocoWeb.
+                                The product plans, user flows, and specifications? Also in Rivtor.
                             </p>
                         </div>
 

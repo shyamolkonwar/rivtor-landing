@@ -6,10 +6,10 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 const products = [
   {
     id: '01',
-    name: 'The VocoWeb Kernel™',
+    name: 'The Rivtor Kernel™',
     phase: 'PROPRIETARY TECHNOLOGY',
     headline: 'Compliance as Code.',
-    copy: 'We do not rely on generative ambiguity for security. We utilize a proprietary, hardened Standard Library (@vocoweb/kernel) that enforces GDPR compliance, Identity Management, and Data Sovereignty at the compiler level. The logic is not written; it is injected.',
+    copy: 'We do not rely on generative ambiguity for security. We utilize a proprietary, hardened Standard Library (@rivtor/kernel) that enforces GDPR compliance, Identity Management, and Data Sovereignty at the compiler level. The logic is not written; it is injected.',
     features: [
       'GDPR Compliance Enforced',
       'Identity Management',
@@ -22,7 +22,7 @@ const products = [
     name: 'The Sovereignty Shield',
     phase: 'DATA RESIDENCY',
     headline: 'Data Residency Enforcement.',
-    copy: 'For the EU market, compliance is binary. VocoWeb\'s runtime environment strictly enforces data boundaries, ensuring your application meets the rigorous demands of enterprise governance from the first deploy.',
+    copy: 'For the EU market, compliance is binary. Rivtor\'s runtime environment strictly enforces data boundaries, ensuring your application meets the rigorous demands of enterprise governance from the first deploy.',
     status: 'Runtime Enforcement Active',
     active: false,
   },
@@ -31,7 +31,7 @@ const products = [
     name: 'The Financial Backbone',
     phase: 'MERCHANT INFRASTRUCTURE',
     headline: 'Integrated Merchant Infrastructure.',
-    copy: 'Revenue is not an afterthought. Our architecture creates a direct bridge between your application logic and global financial rails. Payments, invoicing, and tax calculation are native to the VocoWeb environment.',
+    copy: 'Revenue is not an afterthought. Our architecture creates a direct bridge between your application logic and global financial rails. Payments, invoicing, and tax calculation are native to the Rivtor environment.',
     features: [
       'Stripe Integration',
       'Auto Invoicing',
@@ -44,7 +44,7 @@ const products = [
     name: 'The Identity Matrix',
     phase: 'ACCESS GOVERNANCE',
     headline: 'Universal Access Governance.',
-    copy: 'Identity is the perimeter. VocoWeb architects do not build login forms; they inherit a banking-grade Identity Provider. Our @vocoweb/tenant system enforces Multi-Tenancy, Role-Based Access Control (RBAC), and Enterprise SSO at the infrastructure level.',
+    copy: 'Identity is the perimeter. Rivtor architects do not build login forms; they inherit a banking-grade Identity Provider. Our @rivtor/tenant system enforces Multi-Tenancy, Role-Based Access Control (RBAC), and Enterprise SSO at the infrastructure level.',
     status: 'You own the user relationship; we secure the access.',
     active: false,
   }

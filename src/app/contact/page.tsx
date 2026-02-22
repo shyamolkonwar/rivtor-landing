@@ -47,7 +47,7 @@ export default function ContactPage() {
     };
 
     return (
-        <main className="min-h-screen bg-[#050505] text-[#F5F5F7]">
+        <main className="min-h-screen bg-[#070707] text-[#F3F4F6]">
             <Navbar />
 
             <div className="container pt-32 pb-20 max-w-6xl relative z-10">
@@ -59,33 +59,33 @@ export default function ContactPage() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
                         >
-                            <div className="font-mono text-xs text-[#FF4D00] uppercase tracking-wider mb-4">
+                            <div className="font-mono text-xs text-[#E54826] uppercase tracking-wider mb-4">
                                 Global Operations
                             </div>
-                            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[#F5F5F7] mb-6 leading-tight">
+                            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[#F3F4F6] mb-6 leading-tight">
                                 Initiate <br />
                                 Communication
                             </h1>
-                            <p className="font-mono text-sm text-[#A0A0A0] leading-relaxed max-w-sm mb-12">
+                            <p className="font-mono text-sm text-[#9CA3AF] leading-relaxed max-w-sm mb-12">
                                 Deploying enterprise-grade AI infrastructure requires direct coordination. Our team is ready to architect your solution.
                             </p>
 
                             <div className="space-y-8">
-                                <div className="p-6 bg-[#1A1A1A] border border-[#333] rounded-lg">
-                                    <h3 className="font-mono text-sm text-[#F5F5F7] uppercase tracking-wider mb-2">Direct Channel</h3>
-                                    <a href="mailto:office@vocoweb.in" className="text-2xl font-bold text-[#A0A0A0] hover:text-[#FF4D00] transition-colors">
-                                        office@vocoweb.in
+                                <div className="p-6 bg-[#141414] border border-[#262626] rounded-lg">
+                                    <h3 className="font-mono text-sm text-[#F3F4F6] uppercase tracking-wider mb-2">Direct Channel</h3>
+                                    <a href="mailto:office@rivtor.com" className="text-2xl font-bold text-[#9CA3AF] hover:text-[#E54826] transition-colors">
+                                        office@rivtor.com
                                     </a>
                                 </div>
 
                                 <div className="grid grid-cols-2 gap-4">
-                                    <div className="p-6 bg-[#0A0A0A] border border-[#222] rounded-lg">
-                                        <h4 className="font-mono text-xs text-[#666] uppercase mb-1">Support</h4>
-                                        <p className="text-[#F5F5F7]">24/7 Monitoring</p>
+                                    <div className="p-6 bg-[#070707] border border-[#262626] rounded-lg">
+                                        <h4 className="font-mono text-xs text-[#9CA3AF] uppercase mb-1">Support</h4>
+                                        <p className="text-[#F3F4F6]">24/7 Monitoring</p>
                                     </div>
-                                    <div className="p-6 bg-[#0A0A0A] border border-[#222] rounded-lg">
-                                        <h4 className="font-mono text-xs text-[#666] uppercase mb-1">Sales</h4>
-                                        <p className="text-[#F5F5F7]">Enterprise Only</p>
+                                    <div className="p-6 bg-[#070707] border border-[#262626] rounded-lg">
+                                        <h4 className="font-mono text-xs text-[#9CA3AF] uppercase mb-1">Sales</h4>
+                                        <p className="text-[#F3F4F6]">Enterprise Only</p>
                                     </div>
                                 </div>
                             </div>
@@ -94,18 +94,18 @@ export default function ContactPage() {
 
                     {/* Right Column: Form */}
                     <div className="relative">
-                        <div className="absolute -inset-4 bg-gradient-to-r from-[#FF4D00] to-purple-600 opacity-10 blur-2xl rounded-lg pointer-events-none" />
+                        <div className="absolute -inset-4 bg-gradient-to-r from-[#E54826] to-purple-600 opacity-10 blur-2xl rounded-lg pointer-events-none" />
 
                         <motion.form
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                             onSubmit={handleSubmit}
-                            className="relative bg-[#0A0A0A] border border-[#2A2A2A] p-8 md:p-10 rounded-xl shadow-2xl"
+                            className="relative bg-[#070707] border border-[#262626] p-8 md:p-10 rounded-xl shadow-2xl"
                         >
                             <div className="space-y-6">
                                 <div>
-                                    <label htmlFor="name" className="block font-mono text-xs text-[#666] uppercase tracking-wider mb-2">
+                                    <label htmlFor="name" className="block font-mono text-xs text-[#9CA3AF] uppercase tracking-wider mb-2">
                                         Identity / Name
                                     </label>
                                     <input
@@ -114,13 +114,13 @@ export default function ContactPage() {
                                         required
                                         value={formData.name}
                                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                                        className="w-full bg-[#111] border border-[#333] text-[#F5F5F7] p-3 focus:outline-none focus:border-[#FF4D00] transition-colors rounded-none placeholder-[#444]"
+                                        className="w-full bg-[#141414] border border-[#262626] text-[#F3F4F6] p-3 focus:outline-none focus:border-[#E54826] transition-colors rounded-none placeholder-[#666666]"
                                         placeholder="ENTER FULL NAME"
                                     />
                                 </div>
 
                                 <div>
-                                    <label htmlFor="email" className="block font-mono text-xs text-[#666] uppercase tracking-wider mb-2">
+                                    <label htmlFor="email" className="block font-mono text-xs text-[#9CA3AF] uppercase tracking-wider mb-2">
                                         Communication / Email
                                     </label>
                                     <input
@@ -129,20 +129,20 @@ export default function ContactPage() {
                                         required
                                         value={formData.email}
                                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                        className="w-full bg-[#111] border border-[#333] text-[#F5F5F7] p-3 focus:outline-none focus:border-[#FF4D00] transition-colors rounded-none placeholder-[#444]"
+                                        className="w-full bg-[#141414] border border-[#262626] text-[#F3F4F6] p-3 focus:outline-none focus:border-[#E54826] transition-colors rounded-none placeholder-[#666666]"
                                         placeholder="NAME@COMPANY.COM"
                                     />
                                 </div>
 
                                 <div>
-                                    <label htmlFor="type" className="block font-mono text-xs text-[#666] uppercase tracking-wider mb-2">
+                                    <label htmlFor="type" className="block font-mono text-xs text-[#9CA3AF] uppercase tracking-wider mb-2">
                                         Inquiry Type
                                     </label>
                                     <select
                                         id="type"
                                         value={formData.type}
                                         onChange={(e) => setFormData({ ...formData, type: e.target.value })}
-                                        className="w-full bg-[#111] border border-[#333] text-[#F5F5F7] p-3 focus:outline-none focus:border-[#FF4D00] transition-colors rounded-none appearance-none"
+                                        className="w-full bg-[#141414] border border-[#262626] text-[#F3F4F6] p-3 focus:outline-none focus:border-[#E54826] transition-colors rounded-none appearance-none"
                                     >
                                         <option value="sales">Enterprise Sales</option>
                                         <option value="support">Technical Support</option>
@@ -152,7 +152,7 @@ export default function ContactPage() {
                                 </div>
 
                                 <div>
-                                    <label htmlFor="message" className="block font-mono text-xs text-[#666] uppercase tracking-wider mb-2">
+                                    <label htmlFor="message" className="block font-mono text-xs text-[#9CA3AF] uppercase tracking-wider mb-2">
                                         Transmission / Message
                                     </label>
                                     <textarea
@@ -161,7 +161,7 @@ export default function ContactPage() {
                                         rows={4}
                                         value={formData.message}
                                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                                        className="w-full bg-[#111] border border-[#333] text-[#F5F5F7] p-3 focus:outline-none focus:border-[#FF4D00] transition-colors rounded-none placeholder-[#444] resize-none"
+                                        className="w-full bg-[#141414] border border-[#262626] text-[#F3F4F6] p-3 focus:outline-none focus:border-[#E54826] transition-colors rounded-none placeholder-[#666666] resize-none"
                                         placeholder="DETAILS OF YOUR REQUEST..."
                                     />
                                 </div>
@@ -170,7 +170,7 @@ export default function ContactPage() {
                                     <button
                                         type="submit"
                                         disabled={status === 'submitting'}
-                                        className="w-full bg-[#F5F5F7] text-[#050505] font-mono text-sm uppercase tracking-wider py-4 hover:bg-[#FF4D00] hover:text-[#050505] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                        className="w-full bg-[#F3F4F6] text-[#070707] font-mono text-sm uppercase tracking-wider py-4 hover:bg-[#E54826] hover:text-[#070707] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                                     >
                                         {status === 'submitting' ? 'Transmitting...' : 'Send Message'}
                                     </button>

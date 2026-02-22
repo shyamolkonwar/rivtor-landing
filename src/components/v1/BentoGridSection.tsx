@@ -31,7 +31,7 @@ const features = [
     title: 'The Compliance Kernel',
     phase: 'PHASE 3: THE STANDARD (DEPLOYING)',
     headline: 'Standardizing Identity and Commerce',
-    copy: 'The release of our proprietary SDKs to standardize Identity (@vocoweb/auth) and Commerce (@vocoweb/pay) across the ecosystem.',
+    copy: 'The release of our proprietary SDKs to standardize Identity (@rivtor/auth) and Commerce (@rivtor/pay) across the ecosystem.',
     status: 'Status: Deploying Now',
     size: 'medium',
     icon: <ShieldCheck className="w-8 h-8 text-safety-orange" />

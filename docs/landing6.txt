@@ -1,0 +1,127 @@
+Navigation Bar
+RIVTOR
+Sign In
+
+Trust Banner
+Backed by Jacobs Capital.
+
+Hero Section
+
+Engineering the end of legacy software.
+The foundational engine for instant, production-grade infrastructure. We collapse six-month development cycles into a single moment of execution.
+
+[ Request Engine Access ]
+
+The Manifesto
+
+Speed is no longer a feature. It is the foundation.
+For decades, building enterprise software has been a compromise between speed and scale. That era is over. Rivtor replaces the friction of traditional development with zero-latency execution.
+
+Zero-latency deployment.
+Bypassing the friction of traditional engineering. A single directive architects secure databases and managed runtimes instantaneously.
+
+Absolute compliance.
+Built for the rigid logic of the physical world. Audit-ready environments generated to exact regulatory specifications.
+
+Institutional architecture.
+Production-ready infrastructure designed for serious operators. No fragile spreadsheets. No unscalable visual builders.
+
+The Architecture
+
+Proprietary technology. Standardizing the unstandardizable.
+Compliance as code.
+We do not rely on generative probability for security. The Rivtor Kernel is a hardened standard library that enforces compliance, identity management, and data residency at the compiler level. The logic is injected, not written.
+
+Data boundary enforcement.
+For the European market, compliance is binary. The runtime environment strictly enforces geographical data boundaries, ensuring applications meet enterprise governance from the first deployment.
+
+Integrated merchant infrastructure.
+Revenue logic is native to the environment. The architecture creates a direct bridge between application functions and global financial rails, handling payments, invoicing, and tax calculations autonomously.
+
+Universal access governance.
+Identity is the perimeter. Rivtor inherits a banking-grade identity provider, enforcing multi-tenancy, role-based access control, and enterprise single sign-on at the infrastructure level.
+
+The Roadmap
+
+The progressive deployment.
+We are executing a multi-phase transition to autonomous enterprise infrastructure.
+
+Phase 1: The factory (Live)
+Unmetered generation deployed to a managed, globally distributed edge infrastructure. Zero configuration required.
+
+Phase 2: The fortress (Rolling Alpha)
+Hardware-isolated micro-virtual machines designed for data-sensitive enterprise workloads requiring absolute physical separation.
+
+Phase 3: The standard (Deploying)
+The release of proprietary software development kits to standardize enterprise identity and global commerce across the ecosystem.
+
+Phase 4: The intellectual layer (Internal Testing)
+The transition to an autonomous product manager that converts abstract corporate intent into rigorous technical specifications prior to deployment.
+
+The Specifications
+
+Infrastructure
+Serverless edge network.
+Containerized build environments.
+Sub-100ms cold starts.
+
+Compliance
+EU-native data residency.
+Automated right to be forgotten.
+WCAG 2.1 AA enforced.
+
+Commerce
+Stripe Connect integration.
+Pre-built pricing user interface.
+EU-compliant PDF invoice generation.
+
+Code Standards
+React and Node architecture.
+TypeScript native.
+Full GitHub synchronization.
+
+Pricing
+
+Secure your infrastructure.
+Access to the engine is tiered based on operational capacity.
+
+Builder
+$99 / month
+For validating commercial viability.
+Includes three live edge deployments, access to the core engine, and standard identity integration.
+[ Secure Access ]
+
+Founder
+$249 / month
+For scaling revenue-generating assets.
+Includes unlimited deployments, priority generation queue, and access to proprietary kernel modules.
+[ Join the Foundry ]
+
+Enterprise
+Custom
+For organizations requiring absolute data sovereignty.
+Includes private cloud deployment, dedicated instances, and custom service level agreements.
+[ Contact Sales ]
+
+Operational Intelligence (FAQ)
+
+What is the Rivtor Kernel?
+It is our proprietary standard library. While others rely on generative probability, the Kernel provides deterministic security. It is a pre-audited, hard-coded layer that handles authentication, payments, and legal compliance. It ensures that every Rivtor application is enterprise-grade by default.
+
+How does the infrastructure scale?
+We utilize a global edge network architecture. Unlike traditional servers that hit capacity limits, Rivtor deployments automatically replicate across global availability zones, ensuring enterprise-grade uptime from the first day.
+
+Do I retain asset sovereignty?
+Absolute sovereignty. You are building an asset, not renting a service. You retain full ownership of your codebase and data, with the ability to export or self-host your application at any time using our standard open-source libraries.
+
+Footer
+Deploy reality.
+[ Request Engine Access ]
+
+© 2026 Rivtor AB. Stockholm, Sweden.
+Privacy. Terms. Security. Contact.
+
+The Design Execution Note:
+When you build this in your codebase, use massive padding. If you think there is enough empty space between "The Manifesto" and "The Architecture," double it. Premium brands whisper; they do not crowd the user.
+
+This reads exactly like a company that builds infrastructure for the modern world.

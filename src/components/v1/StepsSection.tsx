@@ -15,8 +15,8 @@ const steps: Step[] = [
         title: "VocoResearch – Find Out What People Actually Want",
         subtitle: "Stop Guessing. Start Knowing.",
         problem: "Most startups fail because they build something nobody asked for. You think your idea is great, but you haven't talked to actual customers or checked what competitors are doing.",
-        solution: "Before you write a single line of code, ask VocoWeb to research the market for you.",
-        details: "VocoWeb scans competitor reviews and social media. It finds the real complaints people have, so you can build the solution they're already looking for.",
+        solution: "Before you write a single line of code, ask Rivtor to research the market for you.",
+        details: "Rivtor scans competitor reviews and social media. It finds the real complaints people have, so you can build the solution they're already looking for.",
         benefit: "A clear report showing you validated opportunities—problems that real people are actually struggling with. No more building in the dark."
     },
     {
@@ -95,7 +95,7 @@ export default function StepsSection() {
 
                                 <div>
                                     <span className="font-mono text-xs uppercase tracking-[0.05em] text-[#525252] block mb-2">
-                                        HOW VOCOWEB FIXES IT
+                                        HOW RIVTOR FIXES IT
                                     </span>
                                     <p className="text-[#0A0A0A] font-medium leading-relaxed mb-4">
                                         {step.solution}
