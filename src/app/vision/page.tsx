@@ -137,25 +137,11 @@ export default function VisionPage() {
           </section>
 
           {/* Founder Sign-off */}
-          <section className="mt-12 pt-12 border-t border-[#1C1E26] text-center">
-            <p className="text-[#8892A4]" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
+          <section className="mt-12 pt-12 border-t border-[#1C1E26] text-left">
+            <p className="text-[#8892A4] italic" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
               Shyamol Konwar, Founder — Rivtor
             </p>
           </section>
-        </div>
-
-        {/* CTA */}
-        <div className="mt-20 text-center">
-          <p className="text-sm text-[#8892A4] mb-4" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
-            Ready to build the company of the future?
-          </p>
-          <a
-            href="/contact"
-            className="inline-flex min-w-[160px] cursor-pointer items-center justify-center rounded bg-[#C8D8F0] text-[#060608] text-sm font-bold h-12 px-6 tracking-wide hover:bg-[#C8D8F0]/90 transition-all uppercase"
-            style={{ fontFamily: "var(--font-geist-mono), monospace" }}
-          >
-            Request Engine Access
-          </a>
         </div>
       </div>
 
