@@ -12,19 +12,19 @@ export default function HeroSection() {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C8D8F0] opacity-75" />
           <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C8D8F0]" />
         </span>
-        System Operational
+        SYS_V.4.0.2 // OPERATIONAL
       </div>
 
       {/* Headlines */}
       <div className="flex flex-col gap-4 relative z-10">
         <h1 className="text-[#F4F6FB] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight uppercase break-words" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
-          Engineering the end{" "}
+          The organization{" "}
           <span className="bg-gradient-to-r from-[#C8D8F0] via-[#E8F0FF] to-[#C8D8F0] bg-clip-text text-transparent">
-            of legacy software.
+            runs itself.
           </span>
         </h1>
         <h2 className="text-[#8892A4] text-base md:text-xl font-normal max-w-full md:max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-          The foundational engine for instant, production-grade infrastructure. We collapse six-month development cycles into a single moment of execution.
+          Rivtor is the engine that converts a single directive into a fully operational, production-grade digital environment. No engineering team. No six-month runway. No compromise.
         </h2>
       </div>
 
@@ -34,7 +34,7 @@ export default function HeroSection() {
           Request Engine Access
         </button>
         <button className="flex w-full sm:w-auto min-w-[160px] cursor-pointer items-center justify-center rounded border border-[#1C1E26] bg-transparent text-[#F4F6FB] text-sm font-bold h-12 px-6 tracking-wide hover:border-[#C8D8F0]/50 hover:bg-[#0E0F12] transition-all uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
-          View Documentation
+          View Architecture
         </button>
       </div>
 
@@ -72,7 +72,7 @@ export default function HeroSection() {
             <div className="h-px w-16 sm:w-20 bg-gradient-to-r from-[#C8D8F0]/0 via-[#C8D8F0]/50 to-[#C8D8F0]/0" />
           </div>
         </div>
-        <div className="absolute bottom-4 left-4 text-[10px] text-[#C8D8F0]/60" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>SYS_V.4.0.2 // ONLINE</div>
+        <div className="absolute bottom-4 left-4 text-[10px] text-[#C8D8F0]/60" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>SYS_V.4.0.2 // OPERATIONAL</div>
       </div>
     </section>
   );
