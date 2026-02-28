@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -34,7 +35,7 @@ export default function Navbar() {
 
   return (
     <header className="flex items-center justify-between whitespace-nowrap border-b border-[#1C1E26] bg-[#060608]/80 backdrop-blur-md sticky top-0 z-50 px-4 md:px-6 lg:px-12 py-3 md:py-4 h-14 md:h-16 max-w-[1440px] mx-auto w-full relative">
-      <div className="flex items-center gap-4 text-[#F4F6FB]">
+      <Link href="/" className="flex items-center gap-4 text-[#F4F6FB]">
         <div className="size-6 text-[#C8D8F0]">
           <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
             <path d="M24 4L4 44H44L24 4Z" stroke="currentColor" strokeLinejoin="round" strokeWidth="4" />
@@ -44,7 +45,7 @@ export default function Navbar() {
         <h2 className="text-[#F4F6FB] text-lg font-bold leading-tight tracking-wider uppercase" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
           RIVTOR
         </h2>
-      </div>
+      </Link>
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8">

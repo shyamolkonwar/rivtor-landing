@@ -51,7 +51,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between gap-12">
           {/* Logo & Tagline */}
           <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-2 text-[#F4F6FB]">
+            <Link href="/" className="flex items-center gap-2 text-[#F4F6FB]">
               <div className="size-4 text-[#C8D8F0]">
                 <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                   <path d="M24 4L4 44H44L24 4Z" stroke="currentColor" strokeLinejoin="round" strokeWidth="4" />
@@ -60,7 +60,7 @@ export default function Footer() {
               <h2 className="text-[#F4F6FB] font-bold uppercase tracking-widest" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
                 RIVTOR
               </h2>
-            </div>
+            </Link>
             <p className="text-[#8892A4] text-sm max-w-xs" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
               Advanced infrastructure for the next generation of industrial applications.
             </p>
