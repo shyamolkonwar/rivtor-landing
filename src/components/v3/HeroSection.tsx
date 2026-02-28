@@ -18,7 +18,10 @@ export default function HeroSection() {
       {/* Headlines */}
       <div className="flex flex-col gap-4 relative z-10">
         <h1 className="text-[#F4F6FB] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight uppercase break-words" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
-          Engineering the end of legacy software.
+          Engineering the end{" "}
+          <span className="bg-gradient-to-r from-[#C8D8F0] via-[#E8F0FF] to-[#C8D8F0] bg-clip-text text-transparent">
+            of legacy software.
+          </span>
         </h1>
         <h2 className="text-[#8892A4] text-base md:text-xl font-normal max-w-full md:max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
           The foundational engine for instant, production-grade infrastructure. We collapse six-month development cycles into a single moment of execution.
