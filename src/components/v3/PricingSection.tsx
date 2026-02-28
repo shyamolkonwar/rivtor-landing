@@ -12,7 +12,7 @@ export default function PricingSection() {
         "Core engine access",
         "Standard identity integration",
       ],
-      cta: "Secure Access",
+      cta: "Request Engine Access",
       highlight: false,
     },
     {
@@ -25,7 +25,7 @@ export default function PricingSection() {
         "Priority generation queue",
         "Full kernel module access",
       ],
-      cta: "Join the Foundry",
+      cta: "Request Engine Access",
       highlight: true,
     },
     {
@@ -38,7 +38,7 @@ export default function PricingSection() {
         "Dedicated managed runtime",
         "Custom service agreements",
       ],
-      cta: "Contact Sales",
+      cta: "Request Engine Access",
       highlight: false,
     },
   ];
@@ -48,10 +48,10 @@ export default function PricingSection() {
       <div className="text-center mb-12">
         <h4 className="text-[#C8D8F0] text-xs font-bold tracking-[0.2em] uppercase mb-4" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>Pricing</h4>
         <h2 className="text-[#F4F6FB] text-2xl md:text-3xl lg:text-5xl font-bold uppercase tracking-tight mx-auto" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
-          Infrastructure priced for operators, not experimenters.
+          Access Tiers
         </h2>
         <p className="text-[#8892A4] text-lg mt-6 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-          We do not offer free tiers. We offer serious infrastructure for serious operators at three levels of operational scale. Every tier deploys to the same hardened architecture. The difference is capacity and sovereignty.
+          Three tiers. One architecture.
         </p>
       </div>
 
