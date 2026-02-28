@@ -19,7 +19,7 @@ export default function Footer() {
       id: "product",
       title: "Product",
       links: [
-        { href: "/#core-capabilities", label: "Features" },
+        { href: "/mission", label: "Mission" },
         { href: "/vision", label: "Vision" },
         { href: "/security", label: "Security" },
       ]
@@ -72,8 +72,8 @@ export default function Footer() {
               <h4 className="text-[#F4F6FB] font-bold uppercase text-sm" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
                 Product
               </h4>
-              <Link href="/#core-capabilities" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-                Features
+              <Link href="/mission" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+                Mission
               </Link>
               <Link href="/vision" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
                 Vision
