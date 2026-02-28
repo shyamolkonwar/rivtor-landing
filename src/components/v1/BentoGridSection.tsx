@@ -2,7 +2,7 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Search, ShieldCheck, BrainCircuit, Hammer, Activity } from 'lucide-react';
+import { ShieldCheck, BrainCircuit, Hammer } from 'lucide-react';
 
 const features = [
   {

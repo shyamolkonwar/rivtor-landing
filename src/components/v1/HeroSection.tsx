@@ -30,8 +30,6 @@ export default function HeroSection() {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, [mouseX, mouseY]);
 
-  const spotlightX = useTransform(mouseXSpring, [-1, 1], [-100, 100]);
-  const spotlightY = useTransform(mouseYSpring, [-1, 1], [-100, 100]);
   const dashboardRotateX = useTransform(mouseYSpring, [-1, 1], [10, -10]);
   const dashboardRotateY = useTransform(mouseXSpring, [-1, 1], [-10, 10]);
 

@@ -6,8 +6,9 @@ type GTMEvent = {
 };
 
 export const sendGTMEvent = ({ action, category, label, value }: GTMEvent) => {
-    if (typeof window !== 'undefined' && (window as any).window.gtag) {
-        (window as any).window.gtag('event', action, {
+    if (typeof window !== 'undefined' && (window as unknown as { window: { gtag?: unknown } }).window.gtag) {
+        const win = window as unknown as { window: { gtag: (...args: unknown[]) => void } };
+        win.window.gtag('event', action, {
             event_category: category,
             event_label: label,
             value: value,

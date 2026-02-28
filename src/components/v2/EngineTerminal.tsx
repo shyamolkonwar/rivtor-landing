@@ -32,7 +32,7 @@ export default function EngineTerminal() {
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* Left Pane - Directive */}
             <div className="p-4 md:p-6 border-b md:border-b-0 md:border-r border-[#262626]">
-              <div className="font-mono text-xs text-[#9CA3AF] mb-4">// DIRECTIVE_INPUT</div>
+              <div className="font-mono text-xs text-[#9CA3AF] mb-4">{/* // DIRECTIVE_INPUT */}</div>
               <div className="font-mono text-sm text-[#F3F4F6] space-y-1 break-words">
                 <div><span className="text-[#9CA3AF]">&gt;</span> INITIALIZE: Enterprise_Runtime_Environment</div>
                 <div className="mt-4"><span className="text-[#9CA3AF]">&gt;</span> TARGET_ARCHITECTURE:</div>
@@ -66,7 +66,7 @@ export default function EngineTerminal() {
                   </span>
                 </button>
               </div>
-              <div className="font-mono text-xs text-[#9CA3AF] mb-4">// LIVE_ENVIRONMENT : FACILITY_04_DASHBOARD</div>
+              <div className="font-mono text-xs text-[#9CA3AF] mb-4">{/* // LIVE_ENVIRONMENT : FACILITY_04_DASHBOARD */}</div>
 
               {/* Output Content - Always visible on desktop, toggleable on mobile */}
               <div className={`${showOutput ? 'block' : 'hidden'} md:block`}>

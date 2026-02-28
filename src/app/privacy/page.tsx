@@ -1,6 +1,5 @@
 import Navbar from "@/components/v3/Navbar";
 import Footer from "@/components/v3/Footer";
-import Link from "next/link";
 
 export default function PrivacyPolicy() {
     return (
