@@ -64,7 +64,7 @@ export default function Footer() {
               </h2>
             </Link>
             <p className="text-[#8892A4] text-sm max-w-xs" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-              Advanced infrastructure for the next generation of industrial applications.
+              Engineering the end of legacy infrastructure.
             </p>
           </div>
 
