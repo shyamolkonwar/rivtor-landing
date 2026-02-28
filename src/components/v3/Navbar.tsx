@@ -130,15 +130,15 @@ export default function Navbar() {
           <div className="flex flex-col gap-3 pt-4">
             <button
               onClick={closeMenu}
-              className="w-full cursor-pointer items-center justify-center overflow-hidden rounded border border-[#1C1E26] bg-transparent hover:border-[#C8D8F0]/50 hover:bg-[#0E0F12] transition-all text-[#F4F6FB] text-sm font-bold h-10 px-4 tracking-wide uppercase flex transform transition-all duration-300 ease-out"
-              style={{ fontFamily: "var(--font-geist-mono), monospace", transform: isMobileMenuOpen ? "translateX(0) translateY(0)" : "translateX(-20px) translateY(10px)", opacity: isMobileMenuOpen ? 1 : 0, transitionDelay: isMobileMenuOpen ? "250ms" : "0ms" }}
+              className="w-full cursor-pointer items-center justify-center overflow-hidden rounded border border-[#1C1E26] bg-transparent hover:border-[#C8D8F0]/50 hover:bg-[#0E0F12] transition-all text-[#F4F6FB] text-sm font-bold h-10 px-4 tracking-wide uppercase flex"
+              style={{ fontFamily: "var(--font-geist-mono), monospace" }}
             >
               Log In
             </button>
             <button
               onClick={closeMenu}
-              className="w-full cursor-pointer items-center justify-center overflow-hidden rounded bg-[#C8D8F0] hover:bg-[#C8D8F0]/90 transition-colors text-[#060608] text-sm font-bold h-10 px-4 tracking-wide uppercase flex transform transition-all duration-300 ease-out"
-              style={{ fontFamily: "var(--font-geist-mono), monospace", transform: isMobileMenuOpen ? "translateX(0) translateY(0)" : "translateX(-20px) translateY(10px)", opacity: isMobileMenuOpen ? 1 : 0, transitionDelay: isMobileMenuOpen ? "300ms" : "0ms" }}
+              className="w-full cursor-pointer items-center justify-center overflow-hidden rounded bg-[#C8D8F0] hover:bg-[#C8D8F0]/90 transition-colors text-[#060608] text-sm font-bold h-10 px-4 tracking-wide uppercase flex"
+              style={{ fontFamily: "var(--font-geist-mono), monospace" }}
             >
               Enter The Foundry
             </button>
