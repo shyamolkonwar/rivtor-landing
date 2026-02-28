@@ -10,7 +10,10 @@ export default function Navbar() {
   // Close menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+      const target = event.target as Node;
+      // Don't close if clicking on the hamburger button
+      const hamburgerButton = (event.target as Element)?.closest('[aria-label="Toggle menu"]');
+      if (menuRef.current && !menuRef.current.contains(target) && !hamburgerButton) {
         setIsMobileMenuOpen(false);
       }
     };
