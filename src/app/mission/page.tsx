@@ -79,7 +79,7 @@ export default function MissionPage() {
             </h2>
             <div className="text-[#8892A4] leading-relaxed space-y-4" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
               <p>
-                When most people hear "AI replacing jobs," they think about it at the level of tasks. AI writes the email. AI generates the image. AI summarizes the document. The human still decides. The human still directs. The human is still the center of the system.
+                When most people hear &ldquo;AI replacing jobs,&rdquo; they think about it at the level of tasks. AI writes the email. AI generates the image. AI summarizes the document. The human still decides. The human still directs. The human is still the center of the system.
               </p>
               <p>
                 That framing is not wrong for where we are today. But it is dangerously incomplete as a picture of where we are going.
@@ -195,7 +195,7 @@ export default function MissionPage() {
                 Every person at Rivtor works with the understanding that the systems we build will operate in the real world, making real decisions, with real consequences for the people who trust us.
               </p>
               <p className="text-[#C8D8F0] font-medium">
-                We are not building toys. We are not building experiments. We are building the infrastructure for the next generation of human organizations — the layer that turns a single person's vision into a fully functioning, autonomously operating company.
+                We are not building toys. We are not building experiments. We are building the infrastructure for the next generation of human organizations — the layer that turns a single person&rsquo;s vision into a fully functioning, autonomously operating company.
               </p>
             </div>
           </section>

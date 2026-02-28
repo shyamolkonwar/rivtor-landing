@@ -40,7 +40,7 @@ export default function VisionPage() {
                 That problem has defined the economics of building companies for centuries. The cost of assembling that human system was the primary barrier between an idea and its realization. It still is, for almost every company being built today.
               </p>
               <p className="text-[#C8D8F0] font-medium">
-                Rivtor's vision begins with the recognition that this barrier is about to disappear. Not weaken — disappear.
+                Rivtor&rsquo;s vision begins with the recognition that this barrier is about to disappear. Not weaken — disappear.
               </p>
             </div>
           </section>
@@ -124,7 +124,7 @@ export default function VisionPage() {
                 An agent that holds a role has a different relationship to context. It maintains the history of what it has done, the results those actions produced, the goals it is working toward, and the constraints it is operating within. It does not need to be re-briefed every time it acts.
               </p>
               <p>
-                An agent that holds a role also has a different relationship to accountability. When it makes a decision, that decision is traceable. The reasoning behind it is visible. The criteria it used are auditable. The outcome is measured and fed back into the agent's understanding.
+                An agent that holds a role also has a different relationship to accountability. When it makes a decision, that decision is traceable. The reasoning behind it is visible. The criteria it used are auditable. The outcome is measured and fed back into the agent&rsquo;s understanding.
               </p>
               <p className="text-[#C8D8F0] font-medium">
                 This is the infrastructure that makes autonomous operation trustworthy rather than frightening.
@@ -175,7 +175,7 @@ export default function VisionPage() {
             </h2>
             <div className="text-[#8892A4] leading-relaxed space-y-4" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
               <p>
-                Rivtor intends to set the standard for what it means to build trustworthy autonomous organizational operation. Trustworthy — meaning the people who run their companies on our infrastructure know that the agents are doing what they said they would do, that the decisions are visible and auditable, that the founder's intent is faithfully preserved throughout the system.
+                Rivtor intends to set the standard for what it means to build trustworthy autonomous organizational operation. Trustworthy — meaning the people who run their companies on our infrastructure know that the agents are doing what they said they would do, that the decisions are visible and auditable, that the founder&rsquo;s intent is faithfully preserved throughout the system.
               </p>
               <p>
                 That standard is harder to build than capability. Capability is demonstrated in a demo. Trust is earned over months and years of consistent, reliable, honest operation. We are committed to earning it.
