@@ -85,66 +85,66 @@ export default function Navbar() {
       </button>
 
       {/* Mobile Menu Dropdown */}
-      {isMobileMenuOpen && (
-        <div
-          ref={menuRef}
-          className="md:hidden absolute top-full left-0 right-0 bg-[#0E0F12] border-b border-[#1C1E26] shadow-lg"
-        >
-          <div className="flex flex-col px-4 py-4 gap-0">
-            {/* Nav Links */}
-            <Link
-              href="#"
-              onClick={closeMenu}
-              className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium py-3 border-b border-[#1C1E26]"
-              style={{ fontFamily: "var(--font-inter), sans-serif" }}
-            >
-              Platform
-            </Link>
-            <Link
-              href="#"
-              onClick={closeMenu}
-              className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium py-3 border-b border-[#1C1E26]"
-              style={{ fontFamily: "var(--font-inter), sans-serif" }}
-            >
-              Solutions
-            </Link>
-            <Link
-              href="#"
-              onClick={closeMenu}
-              className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium py-3 border-b border-[#1C1E26]"
-              style={{ fontFamily: "var(--font-inter), sans-serif" }}
-            >
-              Documentation
-            </Link>
-            <Link
-              href="#"
-              onClick={closeMenu}
-              className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium py-3 border-b border-[#1C1E26]"
-              style={{ fontFamily: "var(--font-inter), sans-serif" }}
-            >
-              Pricing
-            </Link>
+      <div
+        ref={menuRef}
+        className={`md:hidden absolute top-full left-0 right-0 bg-[#0E0F12] border-b border-[#1C1E26] shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
+          isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+        }`}
+      >
+        <div className="flex flex-col px-4 py-4 gap-0">
+          {/* Nav Links */}
+          <Link
+            href="#"
+            onClick={closeMenu}
+            className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium py-3 border-b border-[#1C1E26] transform transition-all duration-300 ease-out"
+            style={{ fontFamily: "var(--font-inter), sans-serif", transform: isMobileMenuOpen ? "translateX(0)" : "translateX(-20px)", opacity: isMobileMenuOpen ? 1 : 0, transitionDelay: isMobileMenuOpen ? "50ms" : "0ms" }}
+          >
+            Platform
+          </Link>
+          <Link
+            href="#"
+            onClick={closeMenu}
+            className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium py-3 border-b border-[#1C1E26] transform transition-all duration-300 ease-out"
+            style={{ fontFamily: "var(--font-inter), sans-serif", transform: isMobileMenuOpen ? "translateX(0)" : "translateX(-20px)", opacity: isMobileMenuOpen ? 1 : 0, transitionDelay: isMobileMenuOpen ? "100ms" : "0ms" }}
+          >
+            Solutions
+          </Link>
+          <Link
+            href="#"
+            onClick={closeMenu}
+            className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium py-3 border-b border-[#1C1E26] transform transition-all duration-300 ease-out"
+            style={{ fontFamily: "var(--font-inter), sans-serif", transform: isMobileMenuOpen ? "translateX(0)" : "translateX(-20px)", opacity: isMobileMenuOpen ? 1 : 0, transitionDelay: isMobileMenuOpen ? "150ms" : "0ms" }}
+          >
+            Documentation
+          </Link>
+          <Link
+            href="#"
+            onClick={closeMenu}
+            className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium py-3 border-b border-[#1C1E26] transform transition-all duration-300 ease-out"
+            style={{ fontFamily: "var(--font-inter), sans-serif", transform: isMobileMenuOpen ? "translateX(0)" : "translateX(-20px)", opacity: isMobileMenuOpen ? 1 : 0, transitionDelay: isMobileMenuOpen ? "200ms" : "0ms" }}
+          >
+            Pricing
+          </Link>
 
-            {/* Mobile Buttons */}
-            <div className="flex flex-col gap-3 pt-4">
-              <button
-                onClick={closeMenu}
-                className="w-full cursor-pointer items-center justify-center overflow-hidden rounded border border-[#1C1E26] bg-transparent hover:border-[#C8D8F0]/50 hover:bg-[#0E0F12] transition-all text-[#F4F6FB] text-sm font-bold h-10 px-4 tracking-wide uppercase flex"
-                style={{ fontFamily: "var(--font-geist-mono), monospace" }}
-              >
-                Log In
-              </button>
-              <button
-                onClick={closeMenu}
-                className="w-full cursor-pointer items-center justify-center overflow-hidden rounded bg-[#C8D8F0] hover:bg-[#C8D8F0]/90 transition-colors text-[#060608] text-sm font-bold h-10 px-4 tracking-wide uppercase flex"
-                style={{ fontFamily: "var(--font-geist-mono), monospace" }}
-              >
-                Enter The Foundry
-              </button>
-            </div>
+          {/* Mobile Buttons */}
+          <div className="flex flex-col gap-3 pt-4">
+            <button
+              onClick={closeMenu}
+              className="w-full cursor-pointer items-center justify-center overflow-hidden rounded border border-[#1C1E26] bg-transparent hover:border-[#C8D8F0]/50 hover:bg-[#0E0F12] transition-all text-[#F4F6FB] text-sm font-bold h-10 px-4 tracking-wide uppercase flex transform transition-all duration-300 ease-out"
+              style={{ fontFamily: "var(--font-geist-mono), monospace", transform: isMobileMenuOpen ? "translateX(0) translateY(0)" : "translateX(-20px) translateY(10px)", opacity: isMobileMenuOpen ? 1 : 0, transitionDelay: isMobileMenuOpen ? "250ms" : "0ms" }}
+            >
+              Log In
+            </button>
+            <button
+              onClick={closeMenu}
+              className="w-full cursor-pointer items-center justify-center overflow-hidden rounded bg-[#C8D8F0] hover:bg-[#C8D8F0]/90 transition-colors text-[#060608] text-sm font-bold h-10 px-4 tracking-wide uppercase flex transform transition-all duration-300 ease-out"
+              style={{ fontFamily: "var(--font-geist-mono), monospace", transform: isMobileMenuOpen ? "translateX(0) translateY(0)" : "translateX(-20px) translateY(10px)", opacity: isMobileMenuOpen ? 1 : 0, transitionDelay: isMobileMenuOpen ? "300ms" : "0ms" }}
+            >
+              Enter The Foundry
+            </button>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }
