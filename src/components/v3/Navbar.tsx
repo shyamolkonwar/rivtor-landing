@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
 export default function Navbar() {
@@ -49,18 +48,18 @@ export default function Navbar() {
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8">
-        <Link href="#" className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-          Platform
-        </Link>
-        <Link href="#" className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-          Solutions
-        </Link>
-        <Link href="#" className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-          Documentation
-        </Link>
-        <Link href="#" className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+        <a href="#capabilities" className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+          Capabilities
+        </a>
+        <a href="#architecture" className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+          Architecture
+        </a>
+        <a href="#specs" className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+          Specs
+        </a>
+        <a href="#pricing" className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
           Pricing
-        </Link>
+        </a>
       </nav>
 
       {/* Desktop Buttons */}
@@ -93,38 +92,38 @@ export default function Navbar() {
       >
         <div className="flex flex-col px-4 py-4 gap-0">
           {/* Nav Links */}
-          <Link
-            href="#"
+          <a
+            href="#capabilities"
             onClick={closeMenu}
             className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium py-3 border-b border-[#1C1E26] transform transition-all duration-300 ease-out"
             style={{ fontFamily: "var(--font-inter), sans-serif", transform: isMobileMenuOpen ? "translateX(0)" : "translateX(-20px)", opacity: isMobileMenuOpen ? 1 : 0, transitionDelay: isMobileMenuOpen ? "50ms" : "0ms" }}
           >
-            Platform
-          </Link>
-          <Link
-            href="#"
+            Capabilities
+          </a>
+          <a
+            href="#architecture"
             onClick={closeMenu}
             className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium py-3 border-b border-[#1C1E26] transform transition-all duration-300 ease-out"
             style={{ fontFamily: "var(--font-inter), sans-serif", transform: isMobileMenuOpen ? "translateX(0)" : "translateX(-20px)", opacity: isMobileMenuOpen ? 1 : 0, transitionDelay: isMobileMenuOpen ? "100ms" : "0ms" }}
           >
-            Solutions
-          </Link>
-          <Link
-            href="#"
+            Architecture
+          </a>
+          <a
+            href="#specs"
             onClick={closeMenu}
             className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium py-3 border-b border-[#1C1E26] transform transition-all duration-300 ease-out"
             style={{ fontFamily: "var(--font-inter), sans-serif", transform: isMobileMenuOpen ? "translateX(0)" : "translateX(-20px)", opacity: isMobileMenuOpen ? 1 : 0, transitionDelay: isMobileMenuOpen ? "150ms" : "0ms" }}
           >
-            Documentation
-          </Link>
-          <Link
-            href="#"
+            Specs
+          </a>
+          <a
+            href="#pricing"
             onClick={closeMenu}
             className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium py-3 border-b border-[#1C1E26] transform transition-all duration-300 ease-out"
             style={{ fontFamily: "var(--font-inter), sans-serif", transform: isMobileMenuOpen ? "translateX(0)" : "translateX(-20px)", opacity: isMobileMenuOpen ? 1 : 0, transitionDelay: isMobileMenuOpen ? "200ms" : "0ms" }}
           >
             Pricing
-          </Link>
+          </a>
 
           {/* Mobile Buttons */}
           <div className="flex flex-col gap-3 pt-4">
