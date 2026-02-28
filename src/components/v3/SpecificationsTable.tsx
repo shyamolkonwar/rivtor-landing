@@ -85,7 +85,7 @@ export default function SpecificationsTable() {
       {/* Desktop Grid Layout - Shows only on desktop */}
       <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#1C1E26] divide-y sm:divide-y-0">
         {specGroups.map((group, groupIndex) => (
-          <div key={groupIndex} className="bg-[#0E0F12] p-4 md:p-6">
+          <div key={groupIndex} className={`bg-[#0E0F12] p-4 md:p-6 ${groupIndex === 3 ? 'lg:col-span-3' : ''}`}>
             <h4 className="text-[#C8D8F0] text-xs font-bold uppercase tracking-widest mb-3 md:mb-4 pb-2 border-b border-[#1C1E26]" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
               {group.title}
             </h4>
