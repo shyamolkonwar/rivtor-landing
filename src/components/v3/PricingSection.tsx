@@ -38,7 +38,7 @@ export default function PricingSection() {
         "Dedicated managed runtime",
         "Custom service agreements",
       ],
-      cta: "Request Engine Access",
+      cta: "Contact Sales",
       highlight: false,
     },
   ];

@@ -11,16 +11,28 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      question: "What is the Rivtor Kernel?",
-      answer: "It is our proprietary standard library. While others rely on generative probability, the Kernel provides deterministic security. It is a pre-audited, hard-coded layer that handles authentication, payments, and legal compliance. It ensures that every Rivtor application is enterprise-grade by default.",
+      question: "What is Rivtor?",
+      answer: "Rivtor is the engine that converts a single directive into a fully operational, production-grade digital environment. It is infrastructure for autonomous organizational operation — where the organization does not need managing, it runs.",
     },
     {
-      question: "How does the infrastructure scale?",
-      answer: "We utilize a global edge network architecture. Unlike traditional servers that hit capacity limits, Rivtor deployments automatically replicate across global availability zones, ensuring enterprise-grade uptime from the first day.",
+      question: "How is Rivtor different from other AI tools?",
+      answer: "The difference between a tool and an agent is the difference between a hammer and a contractor. Rivtor builds agents that hold roles, not tools that complete tasks. Agents that maintain context, hold accountability, and operate with full company understanding — not just single-task execution.",
     },
     {
-      question: "Do I retain asset sovereignty?",
-      answer: "Absolute sovereignty. You are building an asset, not renting a service. You retain full ownership of your codebase and data, with the ability to export or self-host your application at any time using our standard open-source libraries.",
+      question: "What is the Kernel?",
+      answer: "The Kernel is our proprietary standard library that provides deterministic security. It is a pre-audited, hard-coded layer that handles identity, payments, and compliance at the infrastructure level. Every environment inherits enterprise-grade security by default. It cannot be misconfigured because it does not require configuration.",
+    },
+    {
+      question: "How fast can I deploy?",
+      answer: "Rivtor deploys production-grade infrastructure in under sixty seconds. Zero configuration required. Your environment is operational, globally distributed, and revenue-ready from the first deployment.",
+    },
+    {
+      question: "Is my data secure and sovereign?",
+      answer: "Absolute data sovereignty. Compliance is enforced geographically at the infrastructure level — not by policy documents, but by the architecture itself. European operations meet GDPR from the first deployment. There is no remediation phase because there is no non-compliant phase.",
+    },
+    {
+      question: "What happens to my data and code?",
+      answer: "You retain full ownership of your codebase and data. Rivtor operates under a zero-retention policy — your data is not used for model training. You can export or self-host your application at any time.",
     },
   ];
 
