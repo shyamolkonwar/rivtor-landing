@@ -50,7 +50,7 @@ export default function ArchitectureSection() {
         <div className="flex flex-col gap-2">
           <h4 className="text-[#C8D8F0] text-xs font-bold tracking-[0.2em] uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>The Architecture</h4>
           <h2 className="text-[#F4F6FB] text-2xl md:text-3xl font-bold uppercase tracking-tight" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
-            Proprietary technology. Standardizing the unstandardizable.
+            Proprietary technology.
           </h2>
         </div>
       </div>
