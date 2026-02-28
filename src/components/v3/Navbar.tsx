@@ -34,7 +34,7 @@ export default function Navbar() {
   const closeMenu = () => setIsMobileMenuOpen(false);
 
   return (
-    <header className="flex items-center justify-between whitespace-nowrap border-b border-[#1C1E26] bg-[#060608]/80 backdrop-blur-md sticky top-0 z-50 px-4 md:px-6 lg:px-12 py-3 md:py-4 h-14 md:h-16 max-w-[1440px] mx-auto w-full relative">
+    <header className="fixed top-0 left-0 right-0 flex items-center justify-between whitespace-nowrap border-b border-[#1C1E26] bg-[#060608]/80 backdrop-blur-md z-50 px-4 md:px-6 lg:px-12 py-3 md:py-4 h-14 md:h-16 max-w-[1440px] mx-auto w-full">
       <Link href="/" className="flex items-center gap-4 text-[#F4F6FB]">
         <div className="size-6 text-[#C8D8F0]">
           <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
