@@ -5,8 +5,8 @@ export default function SpecificationsTable() {
     {
       title: "Infrastructure",
       items: [
-        { label: "Network", value: "Global Edge" },
-        { label: "Compute", value: "Auto-Scaling" },
+        { label: "Network", value: "Global Edge Distribution" },
+        { label: "Compute", value: "Auto-Scaling Runtime" },
         { label: "Latency", value: "Sub-50ms Worldwide" },
       ]
     },
@@ -14,7 +14,7 @@ export default function SpecificationsTable() {
       title: "Compliance",
       items: [
         { label: "Standards", value: ["SOC2", "ISO 27001", "GDPR"], isTags: true },
-        { label: "Data Sovereignty", value: "Geographic Enforcement" },
+        { label: "Data Boundary", value: "Geographic Enforcement" },
         { label: "Accessibility", value: "WCAG 2.1 AA" },
       ]
     },
@@ -22,24 +22,8 @@ export default function SpecificationsTable() {
       title: "Commerce",
       items: [
         { label: "Payments", value: "Global Rail Support" },
-        { label: "Tax Engine", value: "VAT/GST Automation" },
+        { label: "Tax Engine", value: "VAT / GST Automation" },
         { label: "Invoicing", value: "Cross-Border Compliant" },
-      ]
-    },
-    {
-      title: "Development",
-      items: [
-        { label: "Stack", value: "All Frameworks Supported" },
-        { label: "Language", value: "Type-First Architecture" },
-        { label: "Deployment", value: "Zero-Configuration" },
-      ]
-    },
-    {
-      title: "Kernel",
-      items: [
-        { label: "@rivtor/kernel", value: "Hardened Standard Library" },
-        { label: "@rivtor/tenant", value: "Multi-Tenancy Native" },
-        { label: "@rivtor/shield", value: "Runtime Compliance Firewall" },
       ]
     },
     {
@@ -47,7 +31,7 @@ export default function SpecificationsTable() {
       items: [
         { label: "Data Training", value: "Zero-Retention Policy" },
         { label: "Identity", value: "Enterprise-Grade SSO" },
-        { label: "Encryption", value: "Military-Standard AES-256" },
+        { label: "Encryption", value: "AES-256" },
       ]
     },
   ];
@@ -55,7 +39,7 @@ export default function SpecificationsTable() {
   return (
     <section id="specs" className="w-full max-w-6xl mx-auto border border-[#1C1E26] rounded bg-[#0E0F12] overflow-hidden py-16 md:py-20 lg:py-24 px-4 md:px-6">
       <div className="border-b border-[#1C1E26] bg-[#060608]/50 px-4 md:px-6 py-3 md:py-4 flex justify-between items-center gap-4">
-        <h3 className="text-[#F4F6FB] text-xs md:text-sm font-bold uppercase tracking-widest flex-shrink" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>System Specifications</h3>
+        <h3 className="text-[#F4F6FB] text-xs md:text-sm font-bold uppercase tracking-widest flex-shrink" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>The Standard</h3>
         <div className="flex items-center gap-2 flex-shrink-0">
           <div className="size-2 rounded-full bg-[#C8D8F0]/20" />
           <div className="size-2 rounded-full bg-[#C8D8F0]/20" />
