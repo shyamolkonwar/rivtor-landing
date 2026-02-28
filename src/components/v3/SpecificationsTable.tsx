@@ -54,9 +54,9 @@ export default function SpecificationsTable() {
 
   return (
     <section id="specs" className="w-full max-w-6xl mx-auto border border-[#1C1E26] rounded bg-[#0E0F12] overflow-hidden py-16 md:py-20 lg:py-24 px-4 md:px-6">
-      <div className="border-b border-[#1C1E26] bg-[#060608]/50 px-4 md:px-6 py-3 md:py-4 flex justify-between items-center">
-        <h3 className="text-[#F4F6FB] text-xs md:text-sm font-bold uppercase tracking-widest" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>System Specifications</h3>
-        <div className="flex items-center gap-2">
+      <div className="border-b border-[#1C1E26] bg-[#060608]/50 px-4 md:px-6 py-3 md:py-4 flex justify-between items-center gap-4">
+        <h3 className="text-[#F4F6FB] text-xs md:text-sm font-bold uppercase tracking-widest flex-shrink" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>System Specifications</h3>
+        <div className="flex items-center gap-2 flex-shrink-0">
           <div className="size-2 rounded-full bg-[#C8D8F0]/20" />
           <div className="size-2 rounded-full bg-[#C8D8F0]/20" />
           <div className="size-2 rounded-full bg-[#C8D8F0]" />
