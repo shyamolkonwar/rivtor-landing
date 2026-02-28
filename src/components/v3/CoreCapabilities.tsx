@@ -32,7 +32,7 @@ export default function CoreCapabilities() {
   ];
 
   return (
-    <section className="w-full max-w-6xl mx-auto flex flex-col gap-8 py-24 px-6">
+    <section id="core-capabilities" className="w-full max-w-6xl mx-auto flex flex-col gap-8 py-24 px-6">
       <div className="flex flex-col md:flex-row justify-between items-end border-b border-[#1C1E26] pb-4">
         <div className="flex flex-col gap-2">
           <h4 className="text-[#C8D8F0] text-xs font-bold tracking-[0.2em] uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>The Manifesto</h4>
