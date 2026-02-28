@@ -39,37 +39,37 @@ export default function HeroSection() {
       </div>
 
       {/* Abstract Technical Graphic */}
-      <div className="mt-16 w-full h-64 md:h-80 relative rounded border border-[#1C1E26] bg-[#0E0F12]/50 overflow-hidden flex items-center justify-center">
+      <div className="mt-16 w-full h-64 md:h-80 relative rounded border border-[#1C1E26] bg-[#0E0F12]/50 overflow-hidden flex items-center justify-center px-4">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#1C1E26_1px,transparent_1px),linear-gradient(to_bottom,#1C1E26_1px,transparent_1px)] bg-[size:40px_40px] opacity-20" />
-        <div className="flex items-center gap-16 opacity-80">
+        <div className="flex items-center gap-2 sm:gap-4 md:gap-8 lg:gap-16 opacity-80 w-full justify-center">
           {/* Left Node */}
-          <div className="flex flex-col items-center gap-2">
-            <div className="w-12 h-12 rounded border border-[#C8D8F0]/40 bg-[#060608] flex items-center justify-center shadow-[0_0_15px_-5px_#C8D8F0]">
-              <svg className="w-6 h-6 text-[#C8D8F0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="hidden sm:flex flex-col items-center gap-2 shrink-0">
+            <div className="w-10 sm:w-12 h-10 sm:h-12 rounded border border-[#C8D8F0]/40 bg-[#060608] flex items-center justify-center shadow-[0_0_15px_-5px_#C8D8F0]">
+              <svg className="w-5 sm:w-6 h-5 sm:h-6 text-[#C8D8F0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
               </svg>
             </div>
-            <div className="h-px w-20 bg-gradient-to-r from-[#C8D8F0]/0 via-[#C8D8F0]/50 to-[#C8D8F0]/0" />
+            <div className="h-px w-16 sm:w-20 bg-gradient-to-r from-[#C8D8F0]/0 via-[#C8D8F0]/50 to-[#C8D8F0]/0" />
           </div>
           {/* Center Core */}
-          <div className="relative">
+          <div className="relative shrink-0">
             <div className="absolute inset-0 bg-[#C8D8F0]/10 blur-xl rounded-full" />
-            <div className="w-24 h-24 rounded-full border border-[#C8D8F0]/30 bg-[#060608] flex items-center justify-center relative z-10">
-              <div className="w-16 h-16 rounded-full border border-[#C8D8F0]/60 flex items-center justify-center animate-pulse">
-                <svg className="w-8 h-8 text-[#C8D8F0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 rounded-full border border-[#C8D8F0]/30 bg-[#060608] flex items-center justify-center relative z-10">
+              <div className="w-10 sm:w-14 md:w-16 h-10 sm:h-14 md:h-16 rounded-full border border-[#C8D8F0]/60 flex items-center justify-center animate-pulse">
+                <svg className="w-5 sm:w-6 md:w-8 h-5 sm:h-6 md:h-8 text-[#C8D8F0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </div>
             </div>
           </div>
           {/* Right Node */}
-          <div className="flex flex-col items-center gap-2">
-            <div className="w-12 h-12 rounded border border-[#C8D8F0]/40 bg-[#060608] flex items-center justify-center shadow-[0_0_15px_-5px_#C8D8F0]">
-              <svg className="w-6 h-6 text-[#C8D8F0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="hidden sm:flex flex-col items-center gap-2 shrink-0">
+            <div className="w-10 sm:w-12 h-10 sm:h-12 rounded border border-[#C8D8F0]/40 bg-[#060608] flex items-center justify-center shadow-[0_0_15px_-5px_#C8D8F0]">
+              <svg className="w-5 sm:w-6 h-5 sm:h-6 text-[#C8D8F0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
               </svg>
             </div>
-            <div className="h-px w-20 bg-gradient-to-r from-[#C8D8F0]/0 via-[#C8D8F0]/50 to-[#C8D8F0]/0" />
+            <div className="h-px w-16 sm:w-20 bg-gradient-to-r from-[#C8D8F0]/0 via-[#C8D8F0]/50 to-[#C8D8F0]/0" />
           </div>
         </div>
         <div className="absolute bottom-4 left-4 text-[10px] text-[#C8D8F0]/60" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>SYS_V.4.0.2 // ONLINE</div>
