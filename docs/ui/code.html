@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rivtor - Cold Fusion Landing Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#C8D8F0", // Liquid Chromium
+                        "background-light": "#f6f7f8", // Not used in this dark theme request but required by config
+                        "background-dark": "#060608", // Reactor Black
+                        "surface": "#0E0F12", // Shielded Surface
+                        "border-dark": "#1C1E26", // Containment Line
+                        "text-main": "#F4F6FB", // Chromium White
+                        "text-sub": "#8892A4", // Coolant Gray
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"], // Using Space Grotesk for the "Geist/technical" feel
+                        "body": ["Inter", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'dot-grid': 'radial-gradient(circle, #2e3545 1px, transparent 1px)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-text-main min-h-screen selection:bg-primary selection:text-background-dark">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Ambient Glow -->
+<div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-primary/5 blur-[120px] rounded-full pointer-events-none z-0"></div>
+<!-- Dot Grid Texture -->
+<div class="fixed inset-0 bg-dot-grid bg-[size:24px_24px] opacity-[0.04] pointer-events-none z-0"></div>
+<div class="relative z-10 flex flex-col h-full grow">
+<!-- Navbar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-border-dark bg-background-dark/80 backdrop-blur-md sticky top-0 z-50 px-6 py-4 md:px-12">
+<div class="flex items-center gap-4 text-text-main">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4L4 44H44L24 4Z" stroke="currentColor" stroke-linejoin="round" stroke-width="4"></path>
+<circle cx="24" cy="28" fill="currentColor" r="4"></circle>
+</svg>
+</div>
+<h2 class="text-text-main text-lg font-bold leading-tight tracking-wider uppercase font-display">RIVTOR</h2>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<nav class="flex items-center gap-8">
+<a class="text-text-sub hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Platform</a>
+<a class="text-text-sub hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Solutions</a>
+<a class="text-text-sub hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Documentation</a>
+<a class="text-text-sub hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Pricing</a>
+</nav>
+</div>
+<div class="flex gap-3">
+<button class="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded border border-border-dark bg-transparent hover:border-primary/50 hover:bg-surface transition-all text-text-main text-sm font-bold h-9 px-4 tracking-wide font-display">
+<span class="truncate">Log In</span>
+</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded bg-primary hover:bg-primary/90 transition-colors text-background-dark text-sm font-bold h-9 px-4 tracking-wide font-display">
+<span class="truncate">Enter The Foundry</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col flex-1 items-center w-full max-w-[1440px] mx-auto px-6 md:px-12 py-12 md:py-20 gap-20">
+<!-- Hero Section -->
+<section class="flex flex-col items-center justify-center text-center max-w-4xl gap-8 relative">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-xs font-mono text-primary uppercase tracking-widest mb-2">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                        System Operational
+                    </div>
+<div class="flex flex-col gap-4">
+<h1 class="text-text-main text-5xl md:text-7xl font-bold leading-[0.95] tracking-tight font-display uppercase">
+                            Engineered for <br/> <span class="text-primary">Precision.</span>
+</h1>
+<h2 class="text-text-sub text-lg md:text-xl font-normal max-w-2xl mx-auto leading-relaxed">
+                            The foundational layer for industrial-grade deployment. <br class="hidden md:block"/>Built for mission-critical operations where failure is not an option.
+                        </h2>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 mt-4 w-full justify-center">
+<button class="flex w-full sm:w-auto min-w-[160px] cursor-pointer items-center justify-center rounded bg-primary text-background-dark text-base font-bold h-12 px-6 tracking-wide hover:shadow-[0_0_20px_-5px_#C8D8F0] transition-all font-display uppercase">
+                            Enter The Foundry
+                        </button>
+<button class="flex w-full sm:w-auto min-w-[160px] cursor-pointer items-center justify-center rounded border border-border-dark bg-surface text-text-main text-base font-bold h-12 px-6 tracking-wide hover:border-text-sub transition-colors font-display uppercase group">
+<span class="truncate mr-2">View Documentation</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<!-- Abstract Technical Graphic Representation -->
+<div class="mt-16 w-full h-64 md:h-80 relative rounded border border-border-dark bg-surface/50 overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 bg-[linear-gradient(to_right,#1C1E26_1px,transparent_1px),linear-gradient(to_bottom,#1C1E26_1px,transparent_1px)] bg-[size:40px_40px] opacity-20"></div>
+<div class="flex items-center gap-16 opacity-80">
+<!-- Left Node -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 rounded border border-primary/40 bg-background-dark flex items-center justify-center shadow-[0_0_15px_-5px_#C8D8F0]">
+<span class="material-symbols-outlined text-primary">dns</span>
+</div>
+<div class="h-px w-20 bg-gradient-to-r from-primary/0 via-primary/50 to-primary/0"></div>
+</div>
+<!-- Center Core -->
+<div class="relative">
+<div class="absolute inset-0 bg-primary/10 blur-xl rounded-full"></div>
+<div class="w-24 h-24 rounded-full border border-primary/30 bg-background-dark flex items-center justify-center relative z-10">
+<div class="w-16 h-16 rounded-full border border-primary/60 flex items-center justify-center animate-pulse">
+<span class="material-symbols-outlined text-primary text-3xl">hub</span>
+</div>
+</div>
+</div>
+<!-- Right Node -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 rounded border border-primary/40 bg-background-dark flex items-center justify-center shadow-[0_0_15px_-5px_#C8D8F0]">
+<span class="material-symbols-outlined text-primary">memory</span>
+</div>
+<div class="h-px w-20 bg-gradient-to-r from-primary/0 via-primary/50 to-primary/0"></div>
+</div>
+</div>
+<div class="absolute bottom-4 left-4 text-[10px] font-mono text-primary/60">SYS_V.4.0.2 // ONLINE</div>
+</div>
+</section>
+<!-- Core Capabilities Grid -->
+<section class="w-full max-w-6xl flex flex-col gap-8">
+<div class="flex flex-col md:flex-row justify-between items-end border-b border-border-dark pb-4">
+<div class="flex flex-col gap-2">
+<h4 class="text-primary text-xs font-bold tracking-[0.2em] font-mono">CORE CAPABILITIES</h4>
+<h2 class="text-text-main text-3xl font-bold font-display uppercase tracking-tight">Industrial-Grade Infrastructure</h2>
+</div>
+<p class="text-text-sub text-sm max-w-md text-right hidden md:block">
+                            Engineered shielding and thermal management for <br/> peak processing loads in zero-trust environments.
+                        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="group relative flex flex-col gap-4 rounded border border-border-dark bg-surface p-8 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_-10px_rgba(200,216,240,0.1)]">
+<div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary text-sm">north_east</span>
+</div>
+<div class="size-12 rounded bg-background-dark border border-border-dark flex items-center justify-center text-primary mb-2 group-hover:border-primary/40 transition-colors">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-text-main text-xl font-bold font-display">Shielded Architecture</h3>
+<p class="text-text-sub text-sm leading-relaxed">Impenetrable containment lines ensuring zero-trust environments. Hardened against external vectors.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative flex flex-col gap-4 rounded border border-border-dark bg-surface p-8 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_-10px_rgba(200,216,240,0.1)]">
+<div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary text-sm">north_east</span>
+</div>
+<div class="size-12 rounded bg-background-dark border border-border-dark flex items-center justify-center text-primary mb-2 group-hover:border-primary/40 transition-colors">
+<span class="material-symbols-outlined">thermostat</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-text-main text-xl font-bold font-display">Liquid Cooling Efficiency</h3>
+<p class="text-text-sub text-sm leading-relaxed">Optimized thermal management for peak processing loads. Maintains stability under extreme throughput.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative flex flex-col gap-4 rounded border border-border-dark bg-surface p-8 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_-10px_rgba(200,216,240,0.1)]">
+<div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary text-sm">north_east</span>
+</div>
+<div class="size-12 rounded bg-background-dark border border-border-dark flex items-center justify-center text-primary mb-2 group-hover:border-primary/40 transition-colors">
+<span class="material-symbols-outlined">lock_open</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-text-main text-xl font-bold font-display">Quantum-Ready Security</h3>
+<p class="text-text-sub text-sm leading-relaxed">Future-proof encryption standards for next-gen threats. Post-quantum cryptographic algorithms.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Live Stats Section -->
+<section class="w-full max-w-6xl">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="flex flex-col gap-1 rounded border border-border-dark bg-surface/50 p-6 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-3 opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-border-dark group-hover:text-primary/20 text-4xl">timer</span>
+</div>
+<p class="text-text-sub text-xs font-mono uppercase tracking-wider">Uptime Guaranteed</p>
+<p class="text-text-main text-3xl font-bold font-display tracking-tight mt-1">99.999%</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<p class="text-primary text-xs font-bold font-mono tracking-widest">LIVE</p>
+</div>
+</div>
+<div class="flex flex-col gap-1 rounded border border-border-dark bg-surface/50 p-6 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-3 opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-border-dark group-hover:text-primary/20 text-4xl">hub</span>
+</div>
+<p class="text-text-sub text-xs font-mono uppercase tracking-wider">Active Nodes</p>
+<p class="text-text-main text-3xl font-bold font-display tracking-tight mt-1">12,405</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<p class="text-primary text-xs font-bold font-mono tracking-widest">LIVE</p>
+</div>
+</div>
+<div class="flex flex-col gap-1 rounded border border-border-dark bg-surface/50 p-6 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-3 opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-border-dark group-hover:text-primary/20 text-4xl">data_usage</span>
+</div>
+<p class="text-text-sub text-xs font-mono uppercase tracking-wider">Data Throughput</p>
+<p class="text-text-main text-3xl font-bold font-display tracking-tight mt-1">40 PB/s</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<p class="text-primary text-xs font-bold font-mono tracking-widest">LIVE</p>
+</div>
+</div>
+<div class="flex flex-col gap-1 rounded border border-border-dark bg-surface/50 p-6 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-3 opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-border-dark group-hover:text-primary/20 text-4xl">speed</span>
+</div>
+<p class="text-text-sub text-xs font-mono uppercase tracking-wider">Global Latency</p>
+<p class="text-text-main text-3xl font-bold font-display tracking-tight mt-1">&lt;15ms</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<p class="text-primary text-xs font-bold font-mono tracking-widest">LIVE</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specification Table (The Foundry aesthetic) -->
+<section class="w-full max-w-4xl border border-border-dark rounded bg-surface overflow-hidden">
+<div class="border-b border-border-dark bg-background-dark/50 px-6 py-4 flex justify-between items-center">
+<h3 class="text-text-main text-sm font-bold font-mono uppercase tracking-widest">System Specifications</h3>
+<div class="flex items-center gap-2">
+<div class="size-2 rounded-full bg-primary/20"></div>
+<div class="size-2 rounded-full bg-primary/20"></div>
+<div class="size-2 rounded-full bg-primary"></div>
+</div>
+</div>
+<div class="divide-y divide-border-dark">
+<div class="flex flex-col sm:flex-row p-6 hover:bg-white/[0.02] transition-colors">
+<div class="sm:w-1/3 text-text-sub font-mono text-xs uppercase tracking-wider mb-2 sm:mb-0">Kernel Architecture</div>
+<div class="sm:w-2/3 text-text-main font-medium">Monolithic Hybrid v9.4</div>
+</div>
+<div class="flex flex-col sm:flex-row p-6 hover:bg-white/[0.02] transition-colors">
+<div class="sm:w-1/3 text-text-sub font-mono text-xs uppercase tracking-wider mb-2 sm:mb-0">Encryption Standard</div>
+<div class="sm:w-2/3 text-text-main font-medium">AES-256-GCM / ChaCha20-Poly1305</div>
+</div>
+<div class="flex flex-col sm:flex-row p-6 hover:bg-white/[0.02] transition-colors">
+<div class="sm:w-1/3 text-text-sub font-mono text-xs uppercase tracking-wider mb-2 sm:mb-0">Compliance</div>
+<div class="sm:w-2/3 text-text-main font-medium flex gap-2">
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-bold">SOC2</span>
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-bold">ISO 27001</span>
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-bold">GDPR</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row p-6 hover:bg-white/[0.02] transition-colors">
+<div class="sm:w-1/3 text-text-sub font-mono text-xs uppercase tracking-wider mb-2 sm:mb-0">API Rate Limit</div>
+<div class="sm:w-2/3 text-text-main font-medium">Unlimited for Enterprise Nodes</div>
+</div>
+</div>
+<div class="p-4 bg-background-dark/50 border-t border-border-dark text-center">
+<a class="text-xs text-primary font-mono hover:underline uppercase tracking-widest" href="#">Download Full Technical Paper</a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t border-border-dark pt-12 pb-8 mt-10">
+<div class="flex flex-col md:flex-row justify-between gap-12 max-w-6xl mx-auto">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 text-text-main">
+<div class="size-4 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4L4 44H44L24 4Z" stroke="currentColor" stroke-linejoin="round" stroke-width="4"></path>
+</svg>
+</div>
+<h2 class="text-text-main font-bold font-display uppercase tracking-widest">RIVTOR</h2>
+</div>
+<p class="text-text-sub text-sm max-w-xs">
+                                Advanced infrastructure for the next generation of industrial applications.
+                            </p>
+</div>
+<div class="flex gap-16 flex-wrap">
+<div class="flex flex-col gap-4">
+<h4 class="text-text-main font-bold font-display uppercase text-sm">Product</h4>
+<a class="text-text-sub hover:text-primary text-sm transition-colors" href="#">Features</a>
+<a class="text-text-sub hover:text-primary text-sm transition-colors" href="#">Integrations</a>
+<a class="text-text-sub hover:text-primary text-sm transition-colors" href="#">Security</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-text-main font-bold font-display uppercase text-sm">Company</h4>
+<a class="text-text-sub hover:text-primary text-sm transition-colors" href="#">About</a>
+<a class="text-text-sub hover:text-primary text-sm transition-colors" href="#">Careers</a>
+<a class="text-text-sub hover:text-primary text-sm transition-colors" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-text-main font-bold font-display uppercase text-sm">Resources</h4>
+<a class="text-text-sub hover:text-primary text-sm transition-colors" href="#">Documentation</a>
+<a class="text-text-sub hover:text-primary text-sm transition-colors" href="#">API Reference</a>
+<a class="text-text-sub hover:text-primary text-sm transition-colors" href="#">Status</a>
+</div>
+</div>
+</div>
+<div class="max-w-6xl mx-auto mt-12 pt-8 border-t border-border-dark flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-text-sub text-xs">© 2024 Rivtor Industries. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-text-sub hover:text-primary text-xs transition-colors" href="#">Privacy Policy</a>
+<a class="text-text-sub hover:text-primary text-xs transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</main>
+</div>
+</div>
+</body></html>

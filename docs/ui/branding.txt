@@ -1,0 +1,60 @@
+━━━ COLOR SYSTEM · COLD FUSION ━━━
+
+BACKGROUNDS:
+  Reactor Black      #060608  →  Main background
+  Shielded Surface   #0E0F12  →  Cards, panels, data tables
+  Containment Line   #1C1E26  →  Borders, dividers
+
+TYPOGRAPHY:
+  Chromium White     #F4F6FB  →  H1 headlines, primary data
+  Coolant Gray       #8892A4  →  Body text, secondary, labels
+
+ACCENT:
+  Liquid Chromium    #C8D8F0  →  CTA buttons, active indicators ONLY. 10% max.
+
+━━━ CRITICAL PALETTE NOTE ━━━
+  The Liquid Chromium accent (#C8D8F0) is deliberately pale — almost a silver-blue.
+  It is not electric. It does not pulse. It is the accent of a material, not a signal.
+  This makes it the most restrained and premium-feeling palette on this list.
+  It should feel like brushed aluminum under controlled lighting. CERN. Lockheed.
+
+━━━ TYPOGRAPHY ━━━
+  Headings: Geist — letter-spacing -0.04em | Body: Inter | Technical: Geist Mono
+  Never #FFFFFF or #000000.
+
+━━━ ALL SECTIONS — IDENTICAL STRUCTURE TO PROMPT 04 ━━━
+  Build all 10 sections with identical copy and layout. Apply substitutions:
+
+COLOR SUBSTITUTION MAP:
+  #040A0F  →  #060608   (Radar Black → Reactor Black)
+  #071219  →  #0E0F12   (Console Surface → Shielded Surface)
+  #0E2030  →  #1C1E26   (Perimeter Steel → Containment Line)
+  #DFF5E8  →  #F4F6FB   (Phosphor White → Chromium White)
+  #5C8A72  →  #8892A4   (Dim Signal → Coolant Gray)
+  #00FF85  →  #C8D8F0   (Plasma Green → Liquid Chromium)
+
+━━━ PALETTE-SPECIFIC DESIGN NOTES ━━━
+  Hero glow: #C8D8F0 at 3% opacity maximum. Very small radius (300px). It should
+             read as a faint ambient reflection, not a glow effect.
+
+  CTA Button "Enter The Foundry": bg #C8D8F0, text #060608. The pale accent on
+  near-black creates a sense of cold metal being pressed — not a digital button.
+
+  "MOST DEPLOYED" badge: #C8D8F0 at 8% opacity bg, #C8D8F0 text. Border: 1px #C8D8F0.
+
+  Card hover: border transitions from #1C1E26 to #C8D8F0 at 25% opacity. Very slow (400ms).
+
+  Dot-grid texture: #1C1E26 at 4% opacity. Slightly more visible than other palettes
+  because the overall contrast is more muted — the texture adds depth without competing.
+
+  Status dots ("● LIVE"): #C8D8F0. They should look like indicator lights on
+  precision instrumentation, not digital badges.
+
+  This palette rewards patience. At first glance it appears minimal to the point of
+  austerity. On closer inspection, the chromium accent is everywhere — in borders,
+  in status indicators, in the glow — but so restrained that it reads as material
+  quality rather than color. That is the point.
+
+━━━ GLOBAL RULES ━━━
+  All rules identical to Prompt 04. No illustrations. No people. py-24 padding.
+  4px button radius max. Smooth scroll. Scrollbar: Reactor Black.
