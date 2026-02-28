@@ -1,0 +1,465 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                    RIVTOR V3 LANDING PAGE DESIGN SYSTEM
+                    For AI-Assisted Mobile Responsiveness
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+This document contains the complete design system for the v3 landing page.
+Use this as a reference for restructuring the site to support mobile devices.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TABLE OF CONTENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. COLOR SYSTEM (Cold Fusion Palette)
+2. TYPOGRAPHY SYSTEM
+3. SPACING & PADDING SYSTEM
+4. LAYOUT PATTERNS
+5. COMPONENT STRUCTURE
+6. CSS VARIABLES & UTILITIES
+7. MOBILE RESPONSIVENESS ISSUES
+8. RESPONSIVE BREAKPOINTS
+9. COMPONENT-SPECIFIC PATTERNS
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. COLOR SYSTEM (Cold Fusion Palette)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BACKGROUND COLORS:
+- Reactor Black:     #060608  → Main page background
+- Shielded Surface:  #0E0F12  → Cards, panels, data tables, form inputs
+- Containment Line:   #1C1E26  → Borders, dividers
+
+TEXT COLORS:
+- Chromium White:    #F4F6FB  → H1 headlines, primary data, headings
+- Coolant Gray:       #8892A4  → Body text, secondary, labels, placeholders
+
+ACCENT COLORS:
+- Liquid Chromium:   #C8D8F0  → CTA buttons, active indicators, links, icons
+                       Note: Pale silver-blue, NOT electric/glowing
+                       Use at 10% maximum for accents
+                       For glows: use 3% opacity max with 300px radius
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. TYPOGRAPHY SYSTEM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FONT FAMILIES (loaded in app/layout.tsx):
+- Headings:  Geist (from next/font/google)
+  - Letter-spacing: -0.04em (negative for tight, modern look)
+  - Variable: var(--font-geist)
+
+- Body Text: Inter (from next/font/google)
+  - Variable: var(--font-inter)
+
+- Technical/Code/Buttons: Geist Mono (from next/font/google)
+  - Variable: var(--font-geist-mono)
+  - Used for: buttons, labels, tags, technical indicators
+
+FONT SIZES BY ELEMENT:
+
+┌─────────────────────────────────┬───────────────────────┬─────────────────┐
+│ ELEMENT                            │ FONT SIZE             │ LETTER SPACING  │
+├─────────────────────────────────┼───────────────────────┼─────────────────┤
+│ H1 (Hero heading)                 │ text-5xl md:text-7xl │ -0.04em          │
+│ H2 (Section headings)             │ text-3xl md:text-5xl │ -0.04em          │
+│ H3 (Card titles)                  │ text-xl md:text-2xl  │ -0.04em          │
+│ H4 (Labels, badges)               │ text-sm               │ -                │
+│ Labels (uppercase technical)      │ text-xs               │ 0.2em tracking   │
+│ Body text                          │ text-sm md:text-base │ default          │
+│ Buttons (all)                      │ text-sm               │ tracking-wide    │
+│ Footer text                       │ text-xs               │ default          │
+└─────────────────────────────────┴───────────────────────┴─────────────────┘
+
+TYPOGRAPHY USAGE PATTERNS:
+
+1. SECTION HEADERS (in sections like CoreCapabilities, Architecture, etc.):
+   - Label: text-[#C8D8F0] text-xs font-bold tracking-[0.2em] uppercase
+     Font family: Geist Mono
+   - Heading: text-[#F4F6FB] text-3xl font-bold uppercase tracking-tight
+     Font family: Geist, letter-spacing: -0.04em
+
+2. CARD TITLES:
+   - text-[#F4F6FB] text-xl font-bold
+   - Font family: Geist, letter-spacing: -0.04em
+
+3. BODY TEXT:
+   - text-[#8892A4] text-sm leading-relaxed
+   - Font family: Inter
+
+4. BUTTONS (all styles use same pattern):
+   - text-sm font-bold uppercase tracking-widest
+   - Font family: Geist Mono
+   - Height: h-9 (small), h-12 (large)
+   - Border radius: rounded (not rounded-full, max 4px radius)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. SPACING & PADDING SYSTEM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+VERTICAL SPACING (py-):
+- py-4:  Small spacing within components
+- py-6:  Form inputs, card padding
+- py-8:  Card padding (larger cards)
+- py-12:  Section padding (small sections)
+- py-20:  Main content padding
+- py-24:  Section padding (large sections)
+- py-32:  Page-specific content (contact, vision, etc.)
+
+HORIZONTAL SPACING (px-):
+- px-4:  Compact (small cards, tight sections)
+- px-6:  Standard (most sections)
+- px-8:  Larger (forms, large cards)
+- px-10:  Large forms
+- px-12:  Maximum (main page, hero)
+
+GAP SPACING (gap-):
+- gap-2:  Tiny (list items)
+- gap-3:  Small (form elements)
+- gap-4:  Standard (cards, button groups)
+- gap-6:  Medium (grid cards, sections)
+- gap-8:  Large (between sections)
+- gap-12:  Extra large
+- gap-16:  Hero spacing
+- gap-20:  Section-to-section
+- gap-24:  Very large sections
+
+INNER SPACING (p-):
+- p-2:  Tiny
+- p-3:  Form inputs
+- p-4:  Small cards
+- p-6:  Cards, form sections
+- p-8:  Large cards
+- p-10:  Extra large cards
+
+MARGIN TOP (mt-):
+- mt-1:  Tiny offset
+- mt-2:  Small offset
+- mt-3:  Small spacing
+- mt-4:  Standard
+- mt-6:  Medium
+- mt-8:  Large
+- mt-10:  Extra large
+- mt-12:  Section spacing
+- mt-16:  Hero spacing
+- mt-20:  Large section
+
+MARGIN BOTTOM (mb-):
+- Same as mt- values
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. LAYOUT PATTERNS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MAIN CONTAINER:
+- max-w-6xl:  Standard section width
+- max-w-4xl:  Narrow (legal pages, contact form)
+- max-w-3xl:  Very narrow (report form)
+- max-w-1440px:  Absolute maximum (page wrapper)
+- mx-auto:  Center horizontally
+- px-6 md:px-12:  Horizontal padding
+
+SECTION PADDING:
+- py-12 md:py-20:  Standard section padding
+- py-24:  Large section padding (with full-width backgrounds)
+
+GRID SYSTEM:
+- grid-cols-1:  Single column (mobile)
+- sm:grid-cols-2: 2 columns (small tablets)
+- md:grid-cols-2:  2 columns (tablets)
+- md:grid-cols-3:  3 columns (larger screens)
+- lg:grid-cols-3:  3 columns (desktop)
+- lg:grid-cols-4:  4 columns (wide desktop)
+
+GAP PATTERNS:
+- gap-4:  Compact grid
+- gap-6:  Standard grid
+- gap-8:  Relaxed grid
+
+FLEX PATTERNS:
+- flex-col gap-X:  Vertical stack
+- flex-row gap-X:  Horizontal row
+- items-center:  Vertical center
+- justify-between:  Space between
+
+MAX-WIDTH CLASSES:
+- max-w-xs:  Captions, small text blocks
+- max-w-sm:  Descriptions, small forms
+- max-w-md:  Medium text blocks
+- max-w-lg:  Large text blocks
+- max-w-xl:  Extra large text blocks
+- max-w-2xl:  Very large text blocks
+- max-w-4xl:  Page content (legal pages)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. COMPONENT STRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PAGE LAYOUT (src/app/page.tsx):
+```tsx
+<main className="flex flex-col flex-1 items-center w-full max-w-[1440px] mx-auto px-6 md:px-12 py-12 md:py-20 gap-20">
+  <HeroSection />
+  <CoreCapabilities />
+  <LiveStats />
+  <ArchitectureSection />
+  <RoadmapSection />
+  <SpecificationsTable />
+  <PricingSection />
+  <FAQSection />
+</main>
+```
+
+KEY: gap-20 is the section-to-section spacing. This is VERY large for mobile.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6. CSS VARIABLES & UTILITIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DEFINED IN (src/app/layout.tsx):
+- --font-geist
+- --font-geist-mono
+- --font-inter
+
+USAGE PATTERN:
+```tsx
+// Headings with letter-spacing
+style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}
+
+// Body text
+style={{ fontFamily: "var(--font-inter), sans-serif" }}
+
+// Technical/mono (buttons, labels, tags)
+style={{ fontFamily: "var(--font-geist-mono), monospace" }}
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+7. MOBILE RESPONSIVENESS ISSUES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CURRENT ISSUES:
+
+1. HERO SECTION (HeroSection.tsx):
+   - text-5xl md:text-7xl: 7xl is TOO large for mobile
+   - Should be text-4xl sm:text-5xl md:text-6xl lg:text-7xl
+   - Buttons: flex-col sm:flex-row is good for mobile
+
+2. SECTION SPACING:
+   - gap-20 is VERY large for mobile
+   - Should be: gap-12 md:gap-16 lg:gap-20
+   - Or: gap-16 sm:gap-20
+
+3. CORE CAPABILITIES:
+   - Grid: grid-cols-1 md:grid-cols-3
+   - This is correct - 1 column on mobile, 3 on desktop
+   - Cards need responsive padding: p-6 md:p-8
+
+4. LIVE STATS:
+   - Grid: grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
+   - This is correct
+   - Issue: No py-24 padding is good (compact)
+
+5. ARCHITECTURE SECTION:
+   - Grid: grid-cols-1 md:grid-cols-2
+   - This is correct
+
+6. ROADMAP SECTION:
+   - Grid: grid-cols-1 md:grid-cols-2 lg:grid-cols-4
+   - This is correct
+
+7. SPECIFICATIONS TABLE:
+   - Grid: grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
+   - This is correct for 6 items in 2x3 grid
+
+8. PRICING SECTION:
+   - Grid: grid-cols-1 md:grid-cols-3
+   - This is correct
+
+9. FAQ SECTION:
+   - Uses Accordion - should test on mobile
+
+10. CARDS:
+    - Hover effects don't work on mobile
+    - Consider using active states or focus states
+
+11. FOOTER:
+    - Grid breaks on mobile - stacks incorrectly
+    - Needs: flex-col md:flex-row for main layout
+
+12. NAVBAR:
+    - Buttons hidden on mobile: hidden sm:flex
+    - Need mobile menu implementation
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+8. RESPONSIVE BREAKPOINTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TAILWIND DEFAULT BREAKPOINTS:
+- sm:  640px   (small tablets)
+- md:  768px   (tablets)
+- lg:  1024px  (laptops)
+- xl: 1280px  (desktops)
+- 2xl: 1536px  (large screens)
+
+MOBILE FIRST APPROACH:
+- Base styles: 320px - 639px (mobile)
+- sm:          640px+   (small tablets)
+- md:          768px+   (tablets)
+- lg:          1024px+  (desktop)
+
+RECOMMENDED TYPOGRAPHY SCALE FOR MOBILE:
+
+┌─────────────────────────────────┬───────────────────┬─────────────────┬─────────────────┐
+│ ELEMENT                            │ MOBILE (<768px)     │ TABLET (768-1024)│ DESKTOP (>1024)  │
+├─────────────────────────────────┼───────────────────┼─────────────────┼─────────────────┤
+│ H1 Hero                            │ text-4xl            │ text-5xl          │ text-6xl-7xl      │
+│ H2 Section                         │ text-2xl            │ text-3xl          │ text-3xl-5xl      │
+│ H3 Card title                      │ text-lg            │ text-xl          │ text-2xl         │
+│ Body text                         │ text-sm            │ text-base        │ text-base        │
+│ Buttons                            │ text-sm            │ text-sm          │ text-sm          │
+└─────────────────────────────────┴───────────────────┴─────────────────┴─────────────────┘
+
+RECOMMENDED SPACING FOR MOBILE:
+
+┌─────────────────────────────────┬───────────────────┬─────────────────┐
+│ ELEMENT                            │ MOBILE             │ DESKTOP          │
+├─────────────────────────────────┼───────────────────┼─────────────────┤
+│ Page horizontal padding            │ px-4                │ px-6 md:px-12    │
+│ Section vertical padding           │ py-12               │ py-20-24         │
+│ Section gap (between sections)    │ gap-12-16           │ gap-20           │
+│ Card padding                       │ p-4-6               │ p-8              │
+│ Form input padding                 │ p-3                 │ p-3-4            │
+│ Button height                      │ h-10 or h-11        │ h-9 or h-12      │
+│ Grid gap                           │ gap-4               │ gap-6-8          │
+└─────────────────────────────────┴───────────────────┴─────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+9. COMPONENT-SPECIFIC PATTERNS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BUTTON PATTERN:
+```tsx
+<button
+  className="flex w-full sm:w-auto min-w-[84px] cursor-pointer
+             items-center justify-center
+             rounded
+             bg-[#C8D8F0] text-[#060608]
+             text-sm font-bold
+             h-9 px-4
+             tracking-wide
+             hover:bg-[#C8D8F0]/90
+             transition-colors
+             uppercase"
+  style={{ fontFamily: "var(--font-geist-mono), monospace" }}
+>
+  Enter The Foundry
+</button>
+```
+
+CARD PATTERN:
+```tsx
+<div className="group relative flex flex-col gap-4
+            rounded border border-[#1C1E26]
+            bg-[#0E0F12]
+            p-6 md:p-8
+            transition-all duration-300
+            hover:border-[#C8D8F0]/30
+            hover:shadow-[0_0_30px_-10px_rgba(200,216,240,0.1)]">
+
+  {/* Optional: Icon box */}
+  <div className="size-12 rounded bg-[#060608] border border-[#1C1E26]
+                  flex items-center justify-center text-[#C8D8F0]
+                  mb-2
+                  group-hover:border-[#C8D8F0]/40
+                  transition-colors">
+    {icon}
+  </div>
+
+  {/* Content */}
+  <div className="flex flex-col gap-2">
+    <h3 className="text-[#F4F6FB] text-xl font-bold"
+        style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
+      Title
+    </h3>
+    <p className="text-[#8892A4] text-sm leading-relaxed"
+       style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+      Description
+    </p>
+  </div>
+</div>
+```
+
+SECTION HEADER PATTERN:
+```tsx
+<div className="flex flex-col md:flex-row justify-between items-end
+               border-b border-[#1C1E26] pb-4">
+  <div className="flex flex-col gap-2">
+    <h4 className="text-[#C8D8F0] text-xs font-bold tracking-[0.2em] uppercase"
+        style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
+      THE LABEL
+    </h4>
+    <h2 className="text-[#F4F6FB] text-3xl font-bold uppercase tracking-tight"
+        style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
+      The Heading
+    </h2>
+  </div>
+</div>
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+10. QUICK REFERENCE FOR MOBILE REFACTORING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GLOBAL CHANGES NEEDED:
+
+1. REDUCE HEADING SIZES ON MOBILE:
+   - text-5xl md:text-7xl → text-4xl sm:text-5xl md:text-6xl lg:text-7xl
+   - text-3xl → text-2xl md:text-3xl
+   - text-2xl → text-xl md:text-2xl
+
+2. REDUCE SECTION SPACING ON MOBILE:
+   - gap-20 → gap-12 md:gap-16 lg:gap-20
+   - py-24 → py-16 md:py-20 lg:py-24
+
+3. REDUCE PADDING ON MOBILE:
+   - px-6 md:px-12 → px-4 md:px-6 lg:px-12
+   - p-8 → p-6 md:p-8
+   - px-10 md:px-12 → px-6 md:px-10 lg:px-12
+
+4. BUTTON HEIGHTS:
+   - Keep h-9 and h-12, these work on mobile
+
+5. CARDS:
+   - Use p-4 sm:p-6 md:p-8 for responsive card padding
+
+6. GRID GAPS:
+   - gap-8 → gap-4 md:gap-6 lg:gap-8
+
+7. CONTAINER WIDTH:
+   - Keep as is, max-w-6xl works fine on mobile with padding
+
+8. HERO OVERFLOW:
+   - Text needs text-overflow-wrap or break-words
+   - Add to long headings: break-words
+
+9. FOOTER:
+   - Change to flex-col md:flex-row
+   - Reduce gap on mobile: gap-8 md:gap-16
+
+10. NAVBAR:
+    - Add mobile hamburger menu
+    - Hide nav links on mobile
+    - Keep logo and primary CTA visible
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+IMPORTANT REMINDERS FOR AI AGENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. NEVER use #FFFFFF or #000000 - always use palette colors
+2. Maximum 4px border-radius (no rounded-full except for dots)
+3. Geist Mono requires -0.04em letter-spacing for headings
+4. Buttons must be uppercase and use Geist Mono
+5. All icons use stroke="currentColor" with strokeWidth={1.5}
+6. Dot grid texture: #1C1E26 at 4% opacity, 24px spacing
+7. Ambient glow: #C8D8F0 at 3-5% opacity, 120-300px blur radius
+8. Section spacing is currently VERY large - reduce for mobile
+9. Test at 375px (iPhone SE) minimum width
+10. Keep Cold Fusion premium aesthetic - restrained, not flashy
