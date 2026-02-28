@@ -73,10 +73,10 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-[#1C1E26] flex flex-col md:flex-row justify-between items-center gap-4 px-6 md:px-12">
         <p className="text-[#8892A4] text-xs" style={{ fontFamily: "var(--font-inter), sans-serif" }}>© 2024 Rivtor Industries. All rights reserved.</p>
         <div className="flex gap-6">
-          <Link href="#" className="text-[#8892A4] hover:text-[#C8D8F0] text-xs transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+          <Link href="/privacy" className="text-[#8892A4] hover:text-[#C8D8F0] text-xs transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
             Privacy Policy
           </Link>
-          <Link href="#" className="text-[#8892A4] hover:text-[#C8D8F0] text-xs transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+          <Link href="/terms" className="text-[#8892A4] hover:text-[#C8D8F0] text-xs transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
             Terms of Service
           </Link>
         </div>
