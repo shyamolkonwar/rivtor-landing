@@ -24,15 +24,15 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://rivtor.com'),
   title: {
-    default: "Rivtor: The Business Operating System for AI Startups",
+    default: "Rivtor — Infrastructure for Autonomous Organizations",
     template: "%s | Rivtor"
   },
-  description: "Stop building Frankenstein apps. Rivtor is the first end-to-end platform to validate ideas, generate production code, and operate sustainable companies.",
-  keywords: ["Rivtor", "SaaS", "app builder", "no-code", "business automation", "AI builder", "startup tools"],
-  authors: [{ name: "Rivtor Team" }],
+  description: "Rivtor is the engine that converts a single directive into a fully operational, production-grade digital environment. Deploy globally secure infrastructure in under 60 seconds with The Kernel — deterministic security at the infrastructure layer.",
+  keywords: ["Rivtor", "autonomous organizations", "AI agents", "deterministic security", "enterprise infrastructure", "global edge deployment", "data sovereignty", "AI operations", "agent infrastructure"],
+  authors: [{ name: "Rivtor" }],
   openGraph: {
-    title: "Rivtor: The Business Operating System for AI Startups",
-    description: "Stop building Frankenstein apps. Rivtor is the first end-to-end platform to validate ideas, generate production code, and operate sustainable companies.",
+    title: "Rivtor — Infrastructure for Autonomous Organizations",
+    description: "Rivtor is the engine that converts a single directive into a fully operational, production-grade digital environment. Deploy globally secure infrastructure in under 60 seconds with The Kernel — deterministic security at the infrastructure layer.",
     url: 'https://rivtor.com',
     siteName: 'Rivtor',
     locale: 'en_US',
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Rivtor: The Business Operating System for AI Startups",
-    description: "Stop building Frankenstein apps. Rivtor is the first end-to-end platform to validate ideas, generate production code, and operate sustainable companies.",
-    creator: '@rivtor', // Placeholder or real handle if known
+    title: "Rivtor — Infrastructure for Autonomous Organizations",
+    description: "Rivtor is the engine that converts a single directive into a fully operational, production-grade digital environment. Deploy globally secure infrastructure in under 60 seconds.",
+    creator: '@rivtor',
   },
   robots: {
     index: true,
