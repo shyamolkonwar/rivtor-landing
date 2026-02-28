@@ -6,10 +6,10 @@ export default function PricingSection() {
       name: "Builder",
       price: "$99",
       period: "/month",
-      description: "For validating commercial viability.",
+      description: "For founders validating commercial architecture before scaling.",
       features: [
         "Three live edge deployments",
-        "Access to the core engine",
+        "Core engine access",
         "Standard identity integration",
       ],
       cta: "Secure Access",
@@ -19,24 +19,24 @@ export default function PricingSection() {
       name: "Founder",
       price: "$249",
       period: "/month",
-      description: "For scaling revenue-generating assets.",
+      description: "For operators scaling revenue-generating environments without ceiling.",
       features: [
         "Unlimited deployments",
         "Priority generation queue",
-        "Access to proprietary kernel modules",
+        "Full kernel module access",
       ],
       cta: "Join the Foundry",
       highlight: true,
     },
     {
-      name: "Enterprise",
+      name: "Institutional",
       price: "Custom",
       period: "",
-      description: "For organizations requiring absolute data sovereignty.",
+      description: "For organizations that require absolute data sovereignty and dedicated infrastructure.",
       features: [
         "Private cloud deployment",
-        "Dedicated instances",
-        "Custom service level agreements",
+        "Dedicated managed runtime",
+        "Custom service agreements",
       ],
       cta: "Contact Sales",
       highlight: false,
@@ -48,10 +48,10 @@ export default function PricingSection() {
       <div className="text-center mb-12">
         <h4 className="text-[#C8D8F0] text-xs font-bold tracking-[0.2em] uppercase mb-4" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>Pricing</h4>
         <h2 className="text-[#F4F6FB] text-2xl md:text-3xl lg:text-5xl font-bold uppercase tracking-tight mx-auto" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
-          Secure your infrastructure.
+          Infrastructure priced for operators, not experimenters.
         </h2>
         <p className="text-[#8892A4] text-lg mt-6 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-          Access to the engine is tiered based on operational capacity.
+          We do not offer free tiers. We offer serious infrastructure for serious operators at three levels of operational scale. Every tier deploys to the same hardened architecture. The difference is capacity and sovereignty.
         </p>
       </div>
 
