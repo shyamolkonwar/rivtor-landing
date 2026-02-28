@@ -60,6 +60,9 @@ export default function Navbar() {
         <a href="#pricing" className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
           Pricing
         </a>
+        <a href="/vision" className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+          Vision
+        </a>
       </nav>
 
       {/* Desktop Buttons */}
@@ -123,6 +126,14 @@ export default function Navbar() {
             style={{ fontFamily: "var(--font-inter), sans-serif", transform: isMobileMenuOpen ? "translateX(0)" : "translateX(-20px)", opacity: isMobileMenuOpen ? 1 : 0, transitionDelay: isMobileMenuOpen ? "200ms" : "0ms" }}
           >
             Pricing
+          </a>
+          <a
+            href="/vision"
+            onClick={closeMenu}
+            className="text-[#8892A4] hover:text-[#C8D8F0] transition-colors text-sm font-medium py-3 border-b border-[#1C1E26] transform transition-all duration-300 ease-out"
+            style={{ fontFamily: "var(--font-inter), sans-serif", transform: isMobileMenuOpen ? "translateX(0)" : "translateX(-20px)", opacity: isMobileMenuOpen ? 1 : 0, transitionDelay: isMobileMenuOpen ? "250ms" : "0ms" }}
+          >
+            Vision
           </a>
 
           {/* Mobile Buttons */}

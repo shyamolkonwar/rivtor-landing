@@ -20,7 +20,7 @@ export default function Footer() {
       title: "Product",
       links: [
         { href: "/#core-capabilities", label: "Features" },
-        { href: "#", label: "Integrations" },
+        { href: "/vision", label: "Vision" },
         { href: "/security", label: "Security" },
       ]
     },
@@ -75,8 +75,8 @@ export default function Footer() {
               <Link href="/#core-capabilities" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
                 Features
               </Link>
-              <Link href="#" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-                Integrations
+              <Link href="/vision" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+                Vision
               </Link>
               <Link href="/security" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
                 Security
