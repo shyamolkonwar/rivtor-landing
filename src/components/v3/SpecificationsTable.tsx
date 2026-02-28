@@ -6,8 +6,9 @@ export default function SpecificationsTable() {
       title: "Infrastructure",
       items: [
         { label: "Network", value: "Global Edge Distribution" },
-        { label: "Compute", value: "Auto-Scaling Runtime" },
+        { label: "Compute", value: "Auto-Scaling Managed Runtime" },
         { label: "Latency", value: "Sub-50ms Worldwide" },
+        { label: "Configuration", value: "Zero" },
       ]
     },
     {
@@ -32,6 +33,24 @@ export default function SpecificationsTable() {
         { label: "Data Training", value: "Zero-Retention Policy" },
         { label: "Identity", value: "Enterprise-Grade SSO" },
         { label: "Encryption", value: "AES-256" },
+      ]
+    },
+    {
+      title: "Development",
+      items: [
+        { label: "Stack", value: "All Frameworks Supported" },
+        { label: "Architecture", value: "Type-First · Isomorphic" },
+        { label: "Code Generation", value: "Autonomous · Zero-Drift" },
+        { label: "Language Support", value: "TypeScript · Python · Go" },
+      ]
+    },
+    {
+      title: "Autonomous Operations",
+      items: [
+        { label: "Agent Layer", value: "Executive · Engineering · Growth" },
+        { label: "Execution", value: "Directive-to-Deployment" },
+        { label: "Organizational", value: "Self-Managing Runtime" },
+        { label: "Memory", value: "Persistent Operational Context" },
       ]
     },
   ];
@@ -85,7 +104,7 @@ export default function SpecificationsTable() {
       {/* Desktop Grid Layout - Shows only on desktop */}
       <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#1C1E26] divide-y sm:divide-y-0">
         {specGroups.map((group, groupIndex) => (
-          <div key={groupIndex} className={`bg-[#0E0F12] p-4 md:p-6 ${groupIndex === 3 ? 'lg:col-span-3' : ''}`}>
+          <div key={groupIndex} className="bg-[#0E0F12] p-4 md:p-6">
             <h4 className="text-[#C8D8F0] text-xs font-bold uppercase tracking-widest mb-3 md:mb-4 pb-2 border-b border-[#1C1E26]" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
               {group.title}
             </h4>
