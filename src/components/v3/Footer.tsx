@@ -136,7 +136,7 @@ export default function Footer() {
                   </button>
 
                   {/* Links - Collapsed on mobile when closed */}
-                  <div className={`flex flex-col gap-3 overflow-hidden transition-all duration-200 ${isOpen ? "max-h-48 mt-3" : "max-h-0"}`}>
+                  <div className={`flex flex-col gap-3 overflow-hidden transition-all duration-200 ${isOpen ? "max-h-48 mt-3 pointer-events-auto" : "max-h-0"}`}>
                     {category.links.map((link) => (
                       <Link
                         key={link.label}
