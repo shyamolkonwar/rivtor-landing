@@ -2,7 +2,7 @@
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col items-center justify-center text-center max-w-4xl gap-8 relative py-20 px-6 mx-auto">
+    <section className="flex flex-col items-center justify-center text-center max-w-4xl gap-6 md:gap-8 relative py-16 md:py-20 px-4 md:px-6 mx-auto w-full">
       {/* Ambient Glow */}
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[400px] md:w-[600px] lg:w-[800px] h-[250px] md:h-[350px] lg:h-[500px] bg-[#C8D8F0]/3 md:bg-[#C8D8F0]/4 blur-[100px] md:blur-[120px] rounded-full pointer-events-none z-0" />
 
