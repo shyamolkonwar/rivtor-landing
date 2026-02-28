@@ -69,7 +69,7 @@ export default function Navbar() {
           Log In
         </button>
         <button className="min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded bg-[#C8D8F0] hover:bg-[#C8D8F0]/90 transition-colors text-[#060608] text-sm font-bold h-9 px-4 tracking-wide uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
-          Enter The Foundry
+          Request Engine Access
         </button>
       </div>
 
@@ -140,7 +140,7 @@ export default function Navbar() {
               className="w-full cursor-pointer items-center justify-center overflow-hidden rounded bg-[#C8D8F0] hover:bg-[#C8D8F0]/90 transition-colors text-[#060608] text-sm font-bold h-10 px-4 tracking-wide uppercase flex"
               style={{ fontFamily: "var(--font-geist-mono), monospace" }}
             >
-              Enter The Foundry
+              Request Engine Access
             </button>
           </div>
         </div>

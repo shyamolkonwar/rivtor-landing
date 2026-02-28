@@ -31,7 +31,7 @@ export default function HeroSection() {
       {/* CTAs */}
       <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full justify-center relative z-10">
         <button className="flex w-full sm:w-auto min-w-[160px] cursor-pointer items-center justify-center rounded bg-[#C8D8F0] text-[#060608] text-sm font-bold h-12 px-6 tracking-wide hover:shadow-[0_0_20px_-5px_#C8D8F0] transition-all uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
-          Enter The Foundry
+          Request Engine Access
         </button>
         <button className="flex w-full sm:w-auto min-w-[160px] cursor-pointer items-center justify-center rounded border border-[#1C1E26] bg-transparent text-[#F4F6FB] text-sm font-bold h-12 px-6 tracking-wide hover:border-[#C8D8F0]/50 hover:bg-[#0E0F12] transition-all uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
           View Documentation
