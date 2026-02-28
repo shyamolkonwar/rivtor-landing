@@ -25,7 +25,7 @@ export default function FAQSection() {
   ];
 
   return (
-    <section className="w-full max-w-4xl mx-auto flex flex-col gap-8 py-24 px-6">
+    <section className="w-full max-w-4xl mx-auto flex flex-col gap-6 md:gap-8 py-16 md:py-20 lg:py-24 px-4 md:px-6">
       <div className="text-center mb-12">
         <h4 className="text-[#C8D8F0] text-xs font-bold tracking-[0.2em] uppercase mb-4" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>Operational Intelligence</h4>
       </div>
@@ -38,10 +38,10 @@ export default function FAQSection() {
           >
             <button
               onClick={() => toggleItem(index)}
-              className="w-full py-6 flex items-center justify-between text-left group"
+              className="w-full min-h-14 py-4 md:py-6 flex items-center justify-between text-left group"
               aria-expanded={openIndex === index}
             >
-              <span className="text-lg font-medium text-[#F4F6FB] pr-8 group-hover:text-[#C8D8F0] transition-colors" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
+              <span className="text-sm md:text-lg font-medium text-[#F4F6FB] pr-8 group-hover:text-[#C8D8F0] transition-colors" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
                 {faq.question}
               </span>
               <span
@@ -51,9 +51,9 @@ export default function FAQSection() {
               </span>
             </button>
             <div
-              className={`overflow-hidden transition-all duration-200 ease-out ${openIndex === index ? "max-h-40 pb-6" : "max-h-0"}`}
+              className={`overflow-hidden transition-all duration-200 ease-out ${openIndex === index ? "max-h-40 pb-4 md:pb-6" : "max-h-0"}`}
             >
-              <p className="text-[#8892A4] leading-relaxed pr-12" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+              <p className="text-[#8892A4] leading-relaxed pr-8 md:pr-12" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
                 {faq.answer}
               </p>
             </div>

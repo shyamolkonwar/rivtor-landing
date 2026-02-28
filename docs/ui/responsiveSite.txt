@@ -1,0 +1,191 @@
+Looking at your design system doc, here is every change needed to make the Cold Fusion landing page fully responsive. Apply these in order.
+
+---
+
+**1. PAGE WRAPPER — reduce section gap on mobile**
+
+The `gap-20` between sections is the biggest offender on mobile. Change the main wrapper to:
+
+```
+gap-12 md:gap-16 lg:gap-20
+px-4 md:px-6 lg:px-12
+py-12 md:py-20
+```
+
+---
+
+**2. NAVBAR — add mobile menu**
+
+Currently nav links and buttons are hidden on mobile with `hidden sm:flex`. You need a hamburger menu. The pattern:
+
+- On mobile: show logo + hamburger icon (three horizontal lines, `stroke-[#C8D8F0]`, `strokeWidth={1.5}`)
+- Hamburger toggles a full-width dropdown panel in `bg-[#0E0F12]` with `border-b border-[#1C1E26]`
+- Inside the dropdown: nav links stacked vertically, `py-3 px-4` each, `text-[#8892A4]` Inter, `border-b border-[#1C1E26]`
+- "Enter The Foundry" CTA button at the bottom of dropdown, full width
+- Close on outside click or link tap
+- Navbar itself: `px-4 md:px-6 lg:px-12`, `h-14 md:h-16`
+
+---
+
+**3. HERO SECTION — scale the headline down**
+
+```
+text-4xl sm:text-5xl md:text-6xl lg:text-7xl
+```
+
+Add `break-words` to the H1 to prevent overflow on narrow screens. The subheadline:
+
+```
+text-base md:text-xl lg:text-2xl
+```
+
+Body paragraph: add `max-w-full md:max-w-xl`. Trust bar below CTAs should wrap with `flex-wrap gap-2`.
+
+CTA buttons: your `flex-col sm:flex-row` is already correct. Keep it.
+
+Hero glow: reduce radius on mobile — `200px` blur at `3% opacity` max. Already restrained enough that this barely changes.
+
+---
+
+**4. REALITY STATEMENT — the big stat numbers**
+
+The three-column stat grid needs:
+
+```
+grid-cols-1 md:grid-cols-3
+gap-8 md:gap-6
+```
+
+The stat numbers themselves (`64px` on desktop) need to scale:
+
+```
+text-5xl md:text-6xl lg:text-7xl
+```
+
+On mobile, add a `border-b border-[#1C1E26] pb-8` to each column except the last to create visual separation since they stack vertically.
+
+---
+
+**5. ENGINE SECTION — three cards**
+
+Cards grid:
+
+```
+grid-cols-1 md:grid-cols-3
+gap-4 md:gap-6
+```
+
+Card padding:
+
+```
+p-5 md:p-6 lg:p-8
+```
+
+Card titles: `text-lg md:text-xl`. Labels stay `text-xs`. No changes needed to body text.
+
+---
+
+**6. ROADMAP — timeline**
+
+The vertical timeline line needs to be hidden on mobile since phases stack vertically. On mobile replace the connecting line with a simpler left-border treatment:
+
+- Each phase card gets `border-l-2` in `#1C1E26`
+- Active phase (Phase 01) gets `border-l-2 border-[#C8D8F0]`
+- Remove the horizontal connecting line entirely below `md:`
+
+Grid:
+
+```
+grid-cols-1 md:grid-cols-2 lg:grid-cols-4
+gap-4 md:gap-6
+```
+
+Phase cards: `p-5 md:p-6`. Phase number label (`01`, `02`): `text-3xl md:text-4xl`.
+
+---
+
+**7. PROPRIETARY TECHNOLOGY — four blocks**
+
+Grid:
+
+```
+grid-cols-1 md:grid-cols-2
+gap-4 md:gap-6
+```
+
+On mobile each block stacks. The number (`01`–`04`) and tag should sit on the same row on mobile using `flex items-center justify-between`. This saves vertical space.
+
+Card padding: `p-5 md:p-8`.
+
+Spec lines (`✓ GDPR Enforced // ...`): these long strings will overflow on narrow screens. Split them into individual lines on mobile using `flex-col gap-1` instead of a single inline string.
+
+---
+
+**8. SPECIFICATIONS TABLE — data tables**
+
+This is the hardest section to make responsive. Current `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3` is correct but the tables themselves can overflow.
+
+Inside each table: ensure all values use `break-words` or `truncate` with a tooltip. Table labels and values both `text-xs md:text-sm`. On mobile reduce inner padding to `px-3 py-2`.
+
+Consider collapsing the four tables to a single-column accordion on mobile — each table header becomes a tap-to-expand row. This is the cleanest treatment for dense spec data on a 375px screen.
+
+---
+
+**9. PRICING — four cards**
+
+Current `grid-cols-1 md:grid-cols-3` doesn't account for the Enterprise tier. Use:
+
+```
+grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
+gap-4 md:gap-6
+```
+
+On mobile, the Founder Access card (most deployed) should still visually stand out — keep its `border-t-2 border-[#C8D8F0]` since that works at all widths. Card padding: `p-5 md:p-6 lg:p-8`.
+
+Price number: `text-3xl md:text-4xl`. Feature list items: `text-xs md:text-sm`, reduce `gap-2` to `gap-1.5` on mobile.
+
+---
+
+**10. FAQ ACCORDION**
+
+Accordion works well on mobile natively. The only changes:
+
+- Question text: `text-sm md:text-base`, Geist, tight tracking
+- Answer text: `text-sm`, Inter, Coolant Gray — already correct
+- Tap target height: ensure each closed row is at least `h-14` so it's thumb-friendly
+- Add `px-0` to remove any inner horizontal padding that might cause text overflow
+
+---
+
+**11. FOOTER**
+
+Change the main footer layout from grid to:
+
+```
+flex flex-col md:flex-row
+gap-10 md:gap-16
+```
+
+On mobile: logo and tagline first, then nav links in a `flex-wrap gap-x-6 gap-y-2` row, then status/contact/copyright stacked.
+
+Copyright line: `text-xs`, full width, `border-t border-[#1C1E26] mt-8 pt-6`.
+
+---
+
+**12. GLOBAL RULES TO ADD ONCE**
+
+Add these to your global CSS or Tailwind base layer:
+
+```css
+* { -webkit-tap-highlight-color: transparent; }
+html { scroll-behavior: smooth; }
+body { overflow-x: hidden; }
+```
+
+The `overflow-x: hidden` on body is the single most important global fix — it prevents any component that slightly overflows from creating a horizontal scroll on mobile.
+
+---
+
+**Priority order if you implement these one at a time:**
+
+First: page wrapper gap + `overflow-x: hidden`. Second: navbar hamburger. Third: hero headline scaling. Fourth: footer flex direction. Everything else is refinement. The first four will eliminate 90% of the broken experience on mobile.

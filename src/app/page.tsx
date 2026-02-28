@@ -25,7 +25,7 @@ export default function Home() {
 
       <div className="relative z-10 flex flex-col h-full grow">
         <Navbar />
-        <main className="flex flex-col flex-1 items-center w-full max-w-[1440px] mx-auto px-6 md:px-12 py-12 md:py-20 gap-20">
+        <main className="flex flex-col flex-1 items-center w-full max-w-[1440px] mx-auto px-4 md:px-6 lg:px-12 py-12 md:py-20 gap-12 md:gap-16 lg:gap-20">
           <HeroSection />
           <CoreCapabilities />
           <LiveStats />

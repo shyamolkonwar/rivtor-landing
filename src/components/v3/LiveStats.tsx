@@ -42,12 +42,12 @@ export default function LiveStats() {
   ];
 
   return (
-    <section className="w-full max-w-6xl mx-auto px-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <section className="w-full max-w-6xl mx-auto px-4 md:px-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
         {stats.map((stat, index) => (
           <div
             key={index}
-            className="flex flex-col gap-1 rounded border border-[#1C1E26] bg-[#0E0F12]/50 p-6 relative overflow-hidden group"
+            className="flex flex-col gap-1 rounded border border-[#1C1E26] bg-[#0E0F12]/50 p-4 md:p-6 relative overflow-hidden group"
           >
             <div className="absolute top-0 right-0 p-3 opacity-50 group-hover:opacity-100 transition-opacity">
               <div className="text-[#1C1E26] group-hover:text-[#C8D8F0]/20 text-4xl">
@@ -55,7 +55,7 @@ export default function LiveStats() {
               </div>
             </div>
             <p className="text-[#8892A4] text-xs uppercase tracking-wider" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>{stat.label}</p>
-            <p className="text-[#F4F6FB] text-3xl font-bold tracking-tight mt-1" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
+            <p className="text-[#F4F6FB] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mt-1" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
               {stat.value}
             </p>
             <div className="flex items-center gap-2 mt-2">

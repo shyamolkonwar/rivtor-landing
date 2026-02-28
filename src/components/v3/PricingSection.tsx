@@ -44,10 +44,10 @@ export default function PricingSection() {
   ];
 
   return (
-    <section className="w-full max-w-6xl mx-auto flex flex-col gap-8 py-24 px-6">
+    <section className="w-full max-w-6xl mx-auto flex flex-col gap-6 md:gap-8 py-16 md:py-20 lg:py-24 px-4 md:px-6">
       <div className="text-center mb-12">
         <h4 className="text-[#C8D8F0] text-xs font-bold tracking-[0.2em] uppercase mb-4" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>Pricing</h4>
-        <h2 className="text-[#F4F6FB] text-3xl md:text-5xl font-bold uppercase tracking-tight mx-auto" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
+        <h2 className="text-[#F4F6FB] text-2xl md:text-3xl lg:text-5xl font-bold uppercase tracking-tight mx-auto" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
           Secure your infrastructure.
         </h2>
         <p className="text-[#8892A4] text-lg mt-6 max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
@@ -55,11 +55,11 @@ export default function PricingSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto">
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`rounded border p-8 ${
+            className={`rounded border p-5 md:p-6 lg:p-8 ${
               plan.highlight
                 ? 'border-[#C8D8F0] bg-[#0E0F12]'
                 : 'border-[#1C1E26] bg-[#0E0F12]'
@@ -69,7 +69,7 @@ export default function PricingSection() {
               {plan.name}
             </h3>
             <div className="flex items-baseline gap-1 mb-4">
-              <span className="text-[#F4F6FB] text-4xl font-bold" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
+              <span className="text-[#F4F6FB] text-3xl md:text-4xl font-bold" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
                 {plan.price}
               </span>
               <span className="text-[#8892A4]" style={{ fontFamily: "var(--font-inter), sans-serif" }}>{plan.period}</span>
@@ -78,7 +78,7 @@ export default function PricingSection() {
               {plan.description}
             </p>
 
-            <ul className="space-y-3 mb-8">
+            <ul className="space-y-2 md:space-y-3 mb-6 md:mb-8">
               {plan.features.map((feature, featureIndex) => (
                 <li key={featureIndex} className="text-sm text-[#8892A4] flex items-start gap-2" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
                   <span className="text-[#C8D8F0] mt-1" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>—</span>

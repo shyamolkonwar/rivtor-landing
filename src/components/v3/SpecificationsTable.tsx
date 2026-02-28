@@ -53,9 +53,9 @@ export default function SpecificationsTable() {
   ];
 
   return (
-    <section className="w-full max-w-6xl mx-auto border border-[#1C1E26] rounded bg-[#0E0F12] overflow-hidden py-24 px-6">
-      <div className="border-b border-[#1C1E26] bg-[#060608]/50 px-6 py-4 flex justify-between items-center">
-        <h3 className="text-[#F4F6FB] text-sm font-bold uppercase tracking-widest" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>System Specifications</h3>
+    <section className="w-full max-w-6xl mx-auto border border-[#1C1E26] rounded bg-[#0E0F12] overflow-hidden py-16 md:py-20 lg:py-24 px-4 md:px-6">
+      <div className="border-b border-[#1C1E26] bg-[#060608]/50 px-4 md:px-6 py-3 md:py-4 flex justify-between items-center">
+        <h3 className="text-[#F4F6FB] text-xs md:text-sm font-bold uppercase tracking-widest" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>System Specifications</h3>
         <div className="flex items-center gap-2">
           <div className="size-2 rounded-full bg-[#C8D8F0]/20" />
           <div className="size-2 rounded-full bg-[#C8D8F0]/20" />
@@ -65,8 +65,8 @@ export default function SpecificationsTable() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#1C1E26] divide-y sm:divide-y-0">
         {specGroups.map((group, groupIndex) => (
-          <div key={groupIndex} className="bg-[#0E0F12] p-6">
-            <h4 className="text-[#C8D8F0] text-xs font-bold uppercase tracking-widest mb-4 pb-2 border-b border-[#1C1E26]" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
+          <div key={groupIndex} className="bg-[#0E0F12] p-4 md:p-6">
+            <h4 className="text-[#C8D8F0] text-xs font-bold uppercase tracking-widest mb-3 md:mb-4 pb-2 border-b border-[#1C1E26]" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
               {group.title}
             </h4>
             <div className="space-y-3">

@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full border-t border-[#1C1E26] pt-12 pb-8 mt-10">
-      <div className="flex flex-col md:flex-row justify-between gap-12 max-w-6xl mx-auto px-6 md:px-12">
+    <footer className="w-full border-t border-[#1C1E26] pt-8 md:pt-12 pb-8 mt-10">
+      <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-12 max-w-6xl mx-auto px-4 md:px-6 lg:px-12">
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-2 text-[#F4F6FB]">
             <div className="size-4 text-[#C8D8F0]">
@@ -22,7 +22,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="flex gap-16 flex-wrap">
+        <div className="flex gap-8 md:gap-16 flex-wrap">
           <div className="flex flex-col gap-4">
             <h4 className="text-[#F4F6FB] font-bold uppercase text-sm" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
               Product
@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-[#1C1E26] flex flex-col md:flex-row justify-between items-center gap-4 px-6 md:px-12">
+      <div className="max-w-6xl mx-auto mt-8 md:mt-12 pt-6 md:pt-8 border-t border-[#1C1E26] flex flex-col md:flex-row justify-between items-center gap-4 px-4 md:px-6 lg:px-12">
         <p className="text-[#8892A4] text-xs" style={{ fontFamily: "var(--font-inter), sans-serif" }}>© 2024 Rivtor Industries. All rights reserved.</p>
         <div className="flex gap-6">
           <Link href="/privacy" className="text-[#8892A4] hover:text-[#C8D8F0] text-xs transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>

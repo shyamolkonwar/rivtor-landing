@@ -49,21 +49,21 @@ export default function RoadmapSection() {
   ];
 
   return (
-    <section className="w-full max-w-6xl mx-auto flex flex-col gap-8 py-24 px-6">
+    <section className="w-full max-w-6xl mx-auto flex flex-col gap-6 md:gap-8 py-16 md:py-20 lg:py-24 px-4 md:px-6">
       <div className="flex flex-col md:flex-row justify-between items-end border-b border-[#1C1E26] pb-4">
         <div className="flex flex-col gap-2">
           <h4 className="text-[#C8D8F0] text-xs font-bold tracking-[0.2em] uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>The Roadmap</h4>
-          <h2 className="text-[#F4F6FB] text-3xl font-bold uppercase tracking-tight" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
+          <h2 className="text-[#F4F6FB] text-2xl md:text-3xl font-bold uppercase tracking-tight" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
             The progressive deployment.
           </h2>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
         {phases.map((item, index) => (
           <div
             key={index}
-            className="group relative flex flex-col gap-4 rounded border border-[#1C1E26] bg-[#0E0F12] p-6 transition-all duration-300 hover:border-[#C8D8F0]/30 hover:shadow-[0_0_30px_-10px_rgba(200,216,240,0.1)]"
+            className="group relative flex flex-col gap-4 rounded border border-[#1C1E26] bg-[#0E0F12] p-5 md:p-6 transition-all duration-300 hover:border-[#C8D8F0]/30 hover:shadow-[0_0_30px_-10px_rgba(200,216,240,0.1)]"
           >
             <div className="flex items-center justify-between mb-4">
               <span className="text-xs text-[#8892A4] uppercase tracking-wider" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>

@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <section className="flex flex-col items-center justify-center text-center max-w-4xl gap-8 relative py-20 px-6 mx-auto">
       {/* Ambient Glow */}
-      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[#C8D8F0]/5 blur-[120px] rounded-full pointer-events-none z-0" />
+      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[400px] md:w-[600px] lg:w-[800px] h-[250px] md:h-[350px] lg:h-[500px] bg-[#C8D8F0]/3 md:bg-[#C8D8F0]/4 blur-[100px] md:blur-[120px] rounded-full pointer-events-none z-0" />
 
       {/* System Status Badge */}
       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#C8D8F0]/20 bg-[#C8D8F0]/5 text-xs text-[#C8D8F0] uppercase tracking-widest" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
@@ -17,10 +17,10 @@ export default function HeroSection() {
 
       {/* Headlines */}
       <div className="flex flex-col gap-4 relative z-10">
-        <h1 className="text-[#F4F6FB] text-5xl md:text-7xl font-bold leading-[0.95] tracking-tight uppercase" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
+        <h1 className="text-[#F4F6FB] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight uppercase break-words" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
           Engineering the end of legacy software.
         </h1>
-        <h2 className="text-[#8892A4] text-lg md:text-xl font-normal max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+        <h2 className="text-[#8892A4] text-base md:text-xl font-normal max-w-full md:max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
           The foundational engine for instant, production-grade infrastructure. We collapse six-month development cycles into a single moment of execution.
         </h2>
       </div>

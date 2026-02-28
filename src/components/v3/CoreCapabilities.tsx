@@ -32,21 +32,21 @@ export default function CoreCapabilities() {
   ];
 
   return (
-    <section id="core-capabilities" className="w-full max-w-6xl mx-auto flex flex-col gap-8 py-24 px-6">
+    <section id="core-capabilities" className="w-full max-w-6xl mx-auto flex flex-col gap-6 md:gap-8 py-16 md:py-20 lg:py-24 px-4 md:px-6">
       <div className="flex flex-col md:flex-row justify-between items-end border-b border-[#1C1E26] pb-4">
         <div className="flex flex-col gap-2">
           <h4 className="text-[#C8D8F0] text-xs font-bold tracking-[0.2em] uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>The Manifesto</h4>
-          <h2 className="text-[#F4F6FB] text-3xl font-bold uppercase tracking-tight" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
+          <h2 className="text-[#F4F6FB] text-2xl md:text-3xl font-bold uppercase tracking-tight" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
             Speed is no longer a feature. It is the foundation.
           </h2>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
         {principles.map((principle, index) => (
           <div
             key={index}
-            className="group relative flex flex-col gap-4 rounded border border-[#1C1E26] bg-[#0E0F12] p-8 transition-all duration-300 hover:border-[#C8D8F0]/30 hover:shadow-[0_0_30px_-10px_rgba(200,216,240,0.1)]"
+            className="group relative flex flex-col gap-4 rounded border border-[#1C1E26] bg-[#0E0F12] p-5 md:p-6 lg:p-8 transition-all duration-300 hover:border-[#C8D8F0]/30 hover:shadow-[0_0_30px_-10px_rgba(200,216,240,0.1)]"
           >
             <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
               <svg className="w-4 h-4 text-[#C8D8F0]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -57,7 +57,7 @@ export default function CoreCapabilities() {
               {principle.icon}
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="text-[#F4F6FB] text-xl font-bold" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>{principle.title}</h3>
+              <h3 className="text-[#F4F6FB] text-lg md:text-xl font-bold" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>{principle.title}</h3>
               <p className="text-[#8892A4] text-sm leading-relaxed" style={{ fontFamily: "var(--font-inter), sans-serif" }}>{principle.description}</p>
             </div>
           </div>
