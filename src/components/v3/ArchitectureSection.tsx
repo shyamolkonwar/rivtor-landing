@@ -65,7 +65,6 @@ export default function ArchitectureSection() {
               <div className="size-12 rounded bg-[#060608] border border-[#1C1E26] flex items-center justify-center text-[#C8D8F0] group-hover:border-[#C8D8F0]/40 transition-colors shrink-0">
                 {feature.icon}
               </div>
-              <span className="text-xs text-[#8892A4]" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>{feature.id}</span>
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-[#F4F6FB] text-xl md:text-2xl font-bold" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>{feature.title}</h3>
