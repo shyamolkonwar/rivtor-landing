@@ -55,6 +55,7 @@ export default function Footer() {
               <div className="size-4 text-[#C8D8F0]">
                 <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                   <path d="M24 4L4 44H44L24 4Z" stroke="currentColor" strokeLinejoin="round" strokeWidth="4" />
+                  <circle cx="24" cy="28" fill="currentColor" r="4" />
                 </svg>
               </div>
               <h2 className="text-[#F4F6FB] font-bold uppercase tracking-widest" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
