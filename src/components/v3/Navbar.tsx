@@ -65,12 +65,12 @@ export default function Navbar() {
 
       {/* Desktop Buttons */}
       <div className="hidden md:flex gap-3">
-        <button className="min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded border border-[#1C1E26] bg-transparent hover:border-[#C8D8F0]/50 hover:bg-[#0E0F12] transition-all text-[#F4F6FB] text-sm font-bold h-9 px-4 tracking-wide uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
+        <a href="https://app.rivtor.com/login" className="min-w-[84px] flex items-center justify-center overflow-hidden rounded border border-[#1C1E26] bg-transparent hover:border-[#C8D8F0]/50 hover:bg-[#0E0F12] transition-all text-[#F4F6FB] text-sm font-bold h-9 px-4 tracking-wide uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
           Log In
-        </button>
-        <button className="min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded bg-[#C8D8F0] hover:bg-[#C8D8F0]/90 transition-colors text-[#060608] text-sm font-bold h-9 px-4 tracking-wide uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
+        </a>
+        <a href="https://app.rivtor.com" className="min-w-[84px] flex items-center justify-center overflow-hidden rounded bg-[#C8D8F0] hover:bg-[#C8D8F0]/90 transition-colors text-[#060608] text-sm font-bold h-9 px-4 tracking-wide uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
           Request Engine Access
-        </button>
+        </a>
       </div>
 
       {/* Mobile Hamburger Button */}
@@ -128,20 +128,22 @@ export default function Navbar() {
 
           {/* Mobile Buttons */}
           <div className="flex flex-col gap-3 pt-4">
-            <button
+            <a
+              href="https://app.rivtor.com/login"
               onClick={closeMenu}
-              className="w-full cursor-pointer items-center justify-center overflow-hidden rounded border border-[#1C1E26] bg-transparent hover:border-[#C8D8F0]/50 hover:bg-[#0E0F12] transition-all text-[#F4F6FB] text-sm font-bold h-10 px-4 tracking-wide uppercase flex"
+              className="w-full flex items-center justify-center overflow-hidden rounded border border-[#1C1E26] bg-transparent hover:border-[#C8D8F0]/50 hover:bg-[#0E0F12] transition-all text-[#F4F6FB] text-sm font-bold h-10 px-4 tracking-wide uppercase"
               style={{ fontFamily: "var(--font-geist-mono), monospace" }}
             >
               Log In
-            </button>
-            <button
+            </a>
+            <a
+              href="https://app.rivtor.com"
               onClick={closeMenu}
-              className="w-full cursor-pointer items-center justify-center overflow-hidden rounded bg-[#C8D8F0] hover:bg-[#C8D8F0]/90 transition-colors text-[#060608] text-sm font-bold h-10 px-4 tracking-wide uppercase flex"
+              className="w-full flex items-center justify-center overflow-hidden rounded bg-[#C8D8F0] hover:bg-[#C8D8F0]/90 transition-colors text-[#060608] text-sm font-bold h-10 px-4 tracking-wide uppercase"
               style={{ fontFamily: "var(--font-geist-mono), monospace" }}
             >
               Request Engine Access
-            </button>
+            </a>
           </div>
         </div>
       </div>
