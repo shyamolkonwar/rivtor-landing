@@ -3,8 +3,8 @@
 export default function CoreCapabilities() {
   const principles = [
     {
-      title: "Zero-latency deployment.",
-      description: "Bypassing the friction of traditional engineering. A single directive architects secure databases and managed runtimes instantaneously.",
+      title: "We are not building faster tools.",
+      description: "We are ending the process. The legacy model of software development — the sprint cycles, the architecture meetings, the six-month runway — was never a feature. It was a tax. Rivtor is the alternative.",
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -12,8 +12,8 @@ export default function CoreCapabilities() {
       )
     },
     {
-      title: "Absolute compliance.",
-      description: "Built for the rigid logic of the physical world. Audit-ready environments generated to exact regulatory specifications.",
+      title: "The organization runs itself.",
+      description: "Issue a directive. Receive a hardened, compliant, enterprise-grade digital environment — fully operational, globally deployed, revenue-ready — in under sixty seconds. No engineering team. No compromise.",
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -21,8 +21,8 @@ export default function CoreCapabilities() {
       )
     },
     {
-      title: "Institutional architecture.",
-      description: "Production-ready infrastructure designed for serious operators. No fragile spreadsheets. No unscalable visual builders.",
+      title: "A world of autonomous organizations.",
+      description: "We are building to make human organizations fully autonomous — and to do it before anyone else does it wrong. The constraint is no longer execution. It is imagination.",
       icon: (
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -35,9 +35,9 @@ export default function CoreCapabilities() {
     <section id="core-capabilities" className="w-full max-w-6xl mx-auto flex flex-col gap-6 md:gap-8 py-16 md:py-20 lg:py-24 px-4 md:px-6">
       <div className="flex flex-col md:flex-row justify-between items-end border-b border-[#1C1E26] pb-4">
         <div className="flex flex-col gap-2">
-          <h4 className="text-[#C8D8F0] text-xs font-bold tracking-[0.2em] uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>The Manifesto</h4>
+          <h4 className="text-[#C8D8F0] text-xs font-bold tracking-[0.2em] uppercase" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>The Declaration</h4>
           <h2 className="text-[#F4F6FB] text-2xl md:text-3xl font-bold uppercase tracking-tight" style={{ fontFamily: "var(--font-geist), sans-serif", letterSpacing: "-0.04em" }}>
-            Speed is no longer a feature. It is the foundation.
+            We are ending the process.
           </h2>
         </div>
       </div>

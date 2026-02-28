@@ -12,7 +12,7 @@ export default function HeroSection() {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C8D8F0] opacity-75" />
           <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C8D8F0]" />
         </span>
-        SYS_V.4.0.2 // OPERATIONAL
+        System Operational
       </div>
 
       {/* Headlines */}
@@ -72,7 +72,7 @@ export default function HeroSection() {
             <div className="h-px w-16 sm:w-20 bg-gradient-to-r from-[#C8D8F0]/0 via-[#C8D8F0]/50 to-[#C8D8F0]/0" />
           </div>
         </div>
-        <div className="absolute bottom-4 left-4 text-[10px] text-[#C8D8F0]/60" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>SYS_V.4.0.2 // OPERATIONAL</div>
+        <div className="absolute bottom-4 left-4 text-[10px] text-[#C8D8F0]/60" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>SYSTEM // ONLINE</div>
       </div>
     </section>
   );
