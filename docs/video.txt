@@ -1,0 +1,48 @@
+Route 1: The Native HTML5 Video (Best for short animations < 5MB)
+If your animation is relatively short (like a 5-10 second looping abstract render or UI showcase) and tightly compressed, the absolute best way is to host it directly within your Next.js app.
+
+How to do it:
+Convert your video: Export the animation as an .mp4 (H.264) and ideally a .webm file for better compression on modern browsers. Keep the file size under 5MB if possible.
+Create a Poster Image: Export the very first frame of your video as a highly compressed .jpg or .webp.
+Place in Public Folder: Put these files in the public/videos/ directory of your Next.js project.
+The Next.js Implementation:
+Here is the exact setup using standard HTML5 and Tailwind to make it act as a seamless background layer behind your hero text:
+
+JavaScript
+// components/HeroVideo.jsx
+export default function HeroVideo() {
+  return (
+    <div className="relative w-full h-screen overflow-hidden bg-[#0E0F12]">
+      {/* The Video Layer 
+        autoPlay, loop, muted, and playsInline are strictly required 
+        for browsers (especially iOS) to auto-play the video without user interaction.
+      */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        poster="/videos/hero-poster.webp" // Shows instantly while video loads
+        className="absolute top-0 left-0 w-full h-full object-cover opacity-60 pointer-events-none"
+      >
+        <source src="/videos/rivtor-hero.webm" type="video/webm" />
+        <source src="/videos/rivtor-hero.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* The Content Overlay */}
+      <div className="relative z-10 flex flex-col items-center justify-center w-full h-full px-6 text-center">
+        <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight mb-4">
+          The Business Operating System
+        </h1>
+        <p className="text-[#8892A4] max-w-2xl text-lg mb-8">
+          Advanced infrastructure for the next generation of industrial applications.
+        </p>
+        <button className="bg-white text-black px-6 py-3 rounded-sm font-medium hover:bg-gray-200 transition">
+          Initialize Kernel
+        </button>
+      </div>
+    </div>
+  );
+}
