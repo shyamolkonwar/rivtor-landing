@@ -1,6 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+interface Country {
+  name: { common: string };
+  cca2: string;
+}
 
 interface WaitlistDialogProps {
   isOpen: boolean;
@@ -14,8 +19,30 @@ export default function WaitlistDialog({ isOpen, onClose }: WaitlistDialogProps)
     business_name: "",
     country: "",
   });
+  const [countries, setCountries] = useState<Country[]>([]);
+  const [countriesLoading, setCountriesLoading] = useState(true);
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+
+  // Fetch countries when dialog opens
+  useEffect(() => {
+    if (isOpen && countries.length === 0) {
+      setCountriesLoading(true);
+      fetch("https://restcountries.com/v3.1/all?fields=name,cca2")
+        .then((res) => res.json())
+        .then((data: Country[]) => {
+          // Sort countries alphabetically
+          const sorted = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
+          setCountries(sorted);
+        })
+        .catch((err) => {
+          console.error("Failed to fetch countries:", err);
+        })
+        .finally(() => {
+          setCountriesLoading(false);
+        });
+    }
+  }, [isOpen, countries.length]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -160,38 +187,16 @@ export default function WaitlistDialog({ isOpen, onClose }: WaitlistDialogProps)
                   required
                   value={formData.country}
                   onChange={handleChange}
-                  className="w-full bg-[#060608] border border-[#1C1E26] text-[#F4F6FB] p-3 focus:outline-none focus:border-[#C8D8F0] transition-colors rounded"
+                  disabled={countriesLoading}
+                  className="w-full bg-[#060608] border border-[#1C1E26] text-[#F4F6FB] p-3 focus:outline-none focus:border-[#C8D8F0] transition-colors disabled:opacity-50 disabled:cursor-not-allowed rounded"
                   style={{ fontFamily: "var(--font-inter), sans-serif" }}
                 >
-                  <option value="">Select your country</option>
-                  <option value="United States">United States</option>
-                  <option value="United Kingdom">United Kingdom</option>
-                  <option value="Canada">Canada</option>
-                  <option value="Australia">Australia</option>
-                  <option value="Germany">Germany</option>
-                  <option value="France">France</option>
-                  <option value="Netherlands">Netherlands</option>
-                  <option value="Japan">Japan</option>
-                  <option value="Singapore">Singapore</option>
-                  <option value="India">India</option>
-                  <option value="Brazil">Brazil</option>
-                  <option value="Mexico">Mexico</option>
-                  <option value="Spain">Spain</option>
-                  <option value="Italy">Italy</option>
-                  <option value="Sweden">Sweden</option>
-                  <option value="Norway">Norway</option>
-                  <option value="Denmark">Denmark</option>
-                  <option value="Switzerland">Switzerland</option>
-                  <option value="Ireland">Ireland</option>
-                  <option value="Belgium">Belgium</option>
-                  <option value="Austria">Austria</option>
-                  <option value="New Zealand">New Zealand</option>
-                  <option value="South Korea">South Korea</option>
-                  <option value="China">China</option>
-                  <option value="Hong Kong">Hong Kong</option>
-                  <option value="United Arab Emirates">United Arab Emirates</option>
-                  <option value="South Africa">South Africa</option>
-                  <option value="Other">Other</option>
+                  <option value="">{countriesLoading ? "Loading countries..." : "Select your country"}</option>
+                  {countries.map((country) => (
+                    <option key={country.cca2} value={country.name.common}>
+                      {country.name.common}
+                    </option>
+                  ))}
                 </select>
               </div>
 
@@ -203,7 +208,7 @@ export default function WaitlistDialog({ isOpen, onClose }: WaitlistDialogProps)
 
               <button
                 type="submit"
-                disabled={status === "submitting"}
+                disabled={status === "submitting" || countriesLoading}
                 className="w-full bg-[#C8D8F0] text-[#060608] text-sm font-bold uppercase tracking-widest py-3 hover:bg-[#C8D8F0]/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed rounded"
                 style={{ fontFamily: "var(--font-geist-mono), monospace" }}
               >
