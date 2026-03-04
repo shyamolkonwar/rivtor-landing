@@ -38,7 +38,7 @@ export default function Footer() {
       id: "official",
       title: "Official",
       links: [
-        { href: "/report", label: "Report" },
+        { href: "/report", label: "Report us" },
         { href: "/privacy", label: "Privacy Policy" },
         { href: "/terms", label: "Terms of Service" },
       ]
@@ -125,7 +125,7 @@ export default function Footer() {
                 Official
               </h4>
               <Link href="/report" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
-                Report
+                Report us
               </Link>
               <Link href="/privacy" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
                 Privacy Policy
