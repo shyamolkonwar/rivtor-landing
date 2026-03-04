@@ -68,7 +68,7 @@ export default function Footer() {
             </p>
 
             {/* Sponsor Badge */}
-            <div className="flex flex-col gap-2 mt-1">
+            <div className="flex flex-row items-center gap-2 mt-1">
               <span className="text-[#8892A4] text-[10px] uppercase tracking-wider" style={{ fontFamily: "var(--font-geist-mono), monospace" }}>
                 Supported by
               </span>
