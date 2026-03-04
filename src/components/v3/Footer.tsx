@@ -30,7 +30,7 @@ export default function Footer() {
       title: "Company",
       links: [
         { href: "/about", label: "About" },
-        { href: "#", label: "Careers" },
+        { href: "/careers", label: "Careers" },
         { href: "/contact", label: "Contact" },
       ]
     },
@@ -123,7 +123,7 @@ export default function Footer() {
               <Link href="/about" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
                 About
               </Link>
-              <Link href="#" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
+              <Link href="/careers" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
                 Careers
               </Link>
               <Link href="/contact" className="text-[#8892A4] hover:text-[#C8D8F0] text-sm transition-colors" style={{ fontFamily: "var(--font-inter), sans-serif" }}>
