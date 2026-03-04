@@ -1,6 +1,11 @@
 "use client";
 
+import { useState } from "react";
+import WaitlistDialog from "./WaitlistDialog";
+
 export default function PricingSection() {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
   const plans = [
     {
       name: "Builder",
@@ -12,7 +17,7 @@ export default function PricingSection() {
         "Core engine access",
         "Standard identity integration",
       ],
-      cta: "Request Engine Access",
+      cta: "Join Waitlist",
       highlight: false,
     },
     {
@@ -25,7 +30,7 @@ export default function PricingSection() {
         "Priority generation queue",
         "Full kernel module access",
       ],
-      cta: "Request Engine Access",
+      cta: "Join Waitlist",
       highlight: true,
     },
     {
@@ -88,6 +93,7 @@ export default function PricingSection() {
             </ul>
 
             <button
+              onClick={() => plan.cta !== "Contact Sales" && setIsDialogOpen(true)}
               className={`block w-full text-center py-4 text-sm font-bold uppercase tracking-widest transition-colors ${
                 plan.highlight
                   ? 'bg-[#C8D8F0] text-[#060608] hover:bg-[#C8D8F0]/90'
@@ -100,6 +106,9 @@ export default function PricingSection() {
           </div>
         ))}
       </div>
+
+      {/* Waitlist Dialog */}
+      <WaitlistDialog isOpen={isDialogOpen} onClose={() => setIsDialogOpen(false)} />
     </section>
   );
 }
